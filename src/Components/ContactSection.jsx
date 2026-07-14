@@ -77,7 +77,7 @@ const ContactSection = ({ activeTab, locationRef }) => {
 
   const subjectOptions = [
     'Your project',
-    'Careers at Neftio',
+    'Careers at Neffto',
     'Event opportunities',
     'Something else',
   ];

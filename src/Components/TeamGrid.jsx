@@ -12,7 +12,7 @@ const cardData = [
   { id: 1, category: 'WEB DEVELOPER', title: 'MUHAMMAD HAMZA', description: 'Building secure, scalable backend architectures, APIs, and cloud services.', image: Hamza },
   { id: 2, category: 'DIGITAL MARKETING', title: 'Ameer Hamza', description: 'Creating search optimization strategies and online campaign frameworks to scale traffic.', image: Ameerhamza },
   { id: 3, category: 'Performance Marketing', title: 'Sabir Hussain ', description: 'Optimizing paid advertising channels, conversion rates, and ROI metrics.', image: Sabir },
-  { id: 4, category: 'Graphic Designer', title: 'Raeefa Ashfaq', description: 'Designing user interfaces, branding visuals, and high-fidelity graphics.', image: Sabir },
+  { id: 4, category: 'Graphic Designer', title: 'Sabir Hussain', description: 'Designing user interfaces, branding visuals, and high-fidelity graphics.', image: Sabir },
   { id: 5, category: 'FRONTEND WEB DEVELOPER', title: 'MUHAMMAD MUBEEN AMJAD', description: 'Developing responsive UI components using React, Tailwind CSS, and Framer Motion.', image: Mubeen },
   { id: 6, category: 'Graphic Designer', title: 'Meer Ali Abbas', description: 'Creating visually compelling brand identities, graphics, and high-fidelity mockups for digital products.', image: Meer },
   { id: 7, category: 'MACHINE LEARNING', title: 'MUHAMMAD TALHA', description: 'Building machine learning pipelines, predictive engines, and data analytics dashboards.', image: Talha },
