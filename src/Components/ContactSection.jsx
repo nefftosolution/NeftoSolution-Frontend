@@ -122,17 +122,35 @@ const ContactSection = ({ activeTab, locationRef }) => {
                     We'd be happy to chat through your challenge over a virtual coffee - fill in our form and let's find a time.
                   </motion.p>
                   
-                  {status.message && (
+                  {status.message ? (
                     <motion.div 
-                      initial={{ opacity: 0, y: -10 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      className={`p-4 rounded-lg font-bold ${status.type === 'success' ? 'bg-green-100 text-green-700 border-2 border-green-200' : 'bg-red-100 text-red-700 border-2 border-red-200'}`}
+                      initial={{ opacity: 0, scale: 0.95 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      exit={{ opacity: 0, scale: 0.95 }}
+                      className={`flex flex-col items-center justify-center p-12 rounded-[2rem] text-center shadow-xl border-2 ${
+                        status.type === 'success' 
+                          ? 'bg-green-50 border-green-200' 
+                          : 'bg-red-50 border-red-200'
+                      }`}
                     >
-                      {status.message}
+                      <div className={`w-20 h-20 mb-6 rounded-full flex items-center justify-center ${
+                        status.type === 'success' ? 'bg-green-100 text-green-600' : 'bg-red-100 text-red-600'
+                      }`}>
+                        {status.type === 'success' ? (
+                          <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path></svg>
+                        ) : (
+                          <svg className="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M6 18L18 6M6 6l12 12"></path></svg>
+                        )}
+                      </div>
+                      <h3 className={`text-3xl font-extrabold mb-4 ${status.type === 'success' ? 'text-green-700' : 'text-red-700'}`}>
+                        {status.type === 'success' ? 'Message Sent!' : 'Oops, Error!'}
+                      </h3>
+                      <p className={`text-lg font-medium ${status.type === 'success' ? 'text-green-600' : 'text-red-600'}`}>
+                        {status.message}
+                      </p>
                     </motion.div>
-                  )}
-
-                  <form onSubmit={handleSubmit} className="space-y-10">
+                  ) : (
+                  <form onSubmit={handleSubmit} className={`space-y-10 ${isSubmitting ? 'opacity-50 pointer-events-none cursor-not-allowed' : ''}`}>
                     {/* Message Subject */}
                     <motion.div variants={itemVariants}>
                       <label className="block text-sm font-bold text-[#00419B] mb-4 uppercase tracking-widest">
@@ -266,6 +284,7 @@ const ContactSection = ({ activeTab, locationRef }) => {
                       </motion.button>
                     </motion.div>
                   </form>
+                  )}
                 </motion.div>
               ) : (
                 /* --- TAB 2: OUR LOCATION --- */
