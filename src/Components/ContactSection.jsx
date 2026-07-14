@@ -63,7 +63,7 @@ const ContactSection = ({ activeTab, locationRef }) => {
           newsletter: false,
           events: false,
         });
-        setTimeout(() => setStatus({ type: '', message: '' }), 5000);
+        setTimeout(() => setStatus({ type: '', message: '' }), 2000);
       } else {
         setStatus({ type: 'error', message: result.message || 'There was a problem sending your message.' });
       }
