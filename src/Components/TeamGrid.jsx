@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { motion, useMotionValue, useTransform } from 'framer-motion';
 import Hamza from '../assets/images/hamza.png';
-import Ameerhamza from '../assets/images/Ameerhamza.jpeg';
+import Ameerhamza from '../assets/images/Ameerhamza.png';
 import Sabir from '../assets/images/sabir.jpeg';
 import Mubeen from '../assets/images/mubeen.jpg';
 import Meer from '../assets/images/meer.png';

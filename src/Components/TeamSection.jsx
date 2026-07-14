@@ -1,7 +1,7 @@
 import React from "react";
-import CEO from "../assets/images/CEO.jpeg";
-import CTO from "../assets/images/cto.jpeg";
-import CoFounder from "../assets/images/Ameerhamza.jpeg";
+import CEO from "../assets/images/CEO.png";
+import CTO from "../assets/images/cto.png";
+import CoFounder from "../assets/images/Ameerhamza.png";
 
 const TeamSection = () => {
   return (
@@ -29,21 +29,21 @@ const TeamSection = () => {
             imageSrc={CEO}
             name="Abdul Ahad Dahir"
             title="Founder / CEO"
-            imagePosition="center 60%"
+            imagePosition="center 0%"
           />
 
           <TeamCard
             imageSrc={CoFounder}
             name="Ameer Hamza"
             title="Co-Founder / CEO"
-            imagePosition="center 0%"
+            imagePosition="center 10%"
           />
 
           <TeamCard
             imageSrc={CTO}
             name="Muhammad Hunzilah"
             title="CTO"
-            imagePosition="center 30%"
+            imagePosition="center 0%"
           />
         </div>
       </div>

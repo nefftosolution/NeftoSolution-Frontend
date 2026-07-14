@@ -65,7 +65,7 @@ const ContactSection = ({ activeTab, locationRef }) => {
         });
         setTimeout(() => setStatus({ type: '', message: '' }), 5000);
       } else {
-        setStatus({ type: 'error', message: result.message || 'There was a problem sending your message. If you are testing locally, PHP might not be supported.' });
+        setStatus({ type: 'error', message: result.message || 'There was a problem sending your message.' });
       }
     } catch (error) {
       console.error('Error:', error);
@@ -127,7 +127,7 @@ const ContactSection = ({ activeTab, locationRef }) => {
                       initial={{ opacity: 0, scale: 0.95 }}
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.95 }}
-                      className={`flex flex-col items-center justify-center p-12 rounded-[2rem] text-center shadow-xl border-2 ${
+                      className={`flex flex-col items-center justify-center p-12 rounded-4xl text-center shadow-xl border-2 ${
                         status.type === 'success' 
                           ? 'bg-green-50 border-green-200' 
                           : 'bg-red-50 border-red-200'
