@@ -4,10 +4,10 @@ import { Pagination, Mousewheel } from "swiper/modules";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "react-router-dom";
 // images
-import WebDev from "../assets/images/web.avif";
-import AppDev from "../assets/images/app.jpg";
-import AI from "../assets/images/AI.jpg";
-import GraphicDesign from "../assets/images/graphic.jpg";
+import WebDev from "../assets/images/project-1.png";
+import AppDev from "../assets/images/project-2.png";
+import AI from "../assets/images/project-3.png";
+import GraphicDesign from "../assets/images/project-4.png";
 import DigitalMarketing from "../assets/images/DigitalMarketing.jpg";
 import SEO from "../assets/images/seo.jpg";
 // Swiper styles
@@ -17,45 +17,31 @@ import "swiper/css/pagination";
 const cardData = [
   {
     id: 1,
-    title: "Web Development (Coding)",
-    desc: "Build fast, secure, and responsive websites tailored to your business needs using the latest web technologies.",
+    title: "Mubarak Khanam School Website",
+    desc: "A complete school management platform featuring student admissions, class management, attendance tracking, announcements, and an admin dashboard. Built with a modern, responsive design to provide a seamless experience for students, parents, teachers, and administrators.",
     image: WebDev,
-    to: "/services/web-development",
+    to: "https://admin.mubarakkhanamschool.com/",
   },
   {
     id: 2,
-    title: "App Development",
-    desc: "Develop high-performance Android, iOS, and cross-platform mobile applications with modern UI and seamless functionality.",
+    title: "Buraq Dispatch LLC Website",
+    desc: "A professional truck dispatching company website designed to generate leads and showcase dispatch services. Features modern UI, service pages, responsive layouts, contact forms, SEO optimization, and strong call-to-action sections for carrier onboarding.",
     image: AppDev,
-    to: "/services/app-development",
+    to: "https://buraqdispatchllc.com/",
   },
   {
     id: 3,
-    title: "AI & ML",
-    desc: "Leverage Artificial Intelligence and Machine Learning to automate processes, analyze data, and create smart business solutions.",
+    title: "Shop Management System Dashboard",
+    desc: "A powerful business management dashboard that enables administrators to manage products, inventory, sales, purchases, customers, and analytics in one place. Includes secure authentication, real-time reporting, and an intuitive user interface.",
     image: AI,
-    to: "/services/ai-solutions",
+    to: "https://shop-management-system-bu5i.vercel.app/",
   },
   {
     id: 4,
-    title: "Graphic Designing",
-    desc: "Create eye-catching logos, branding, social media posts, brochures, and marketing materials that leave a lasting impression.",
+    title: "WBN IT Agency Website",
+    desc: "A modern IT agency website built to showcase digital services, company expertise, and portfolio projects. Includes engaging animations, responsive layouts, service highlights, contact sections, and a professional brand-focused design.",
     image: GraphicDesign,
-    to: "/services/graphic-design",
-  },
-  {
-    id: 5,
-    title: "Digital Marketing",
-    desc: "Grow your online presence with strategic social media marketing, paid advertising, content marketing, and lead generation.",
-    image: DigitalMarketing,
-    to: "/services/digital-marketing",
-  },
-  {
-    id: 6,
-    title: "SEO",
-    desc: "Improve your website's search engine rankings with on-page, off-page, technical SEO, and keyword optimization strategies.",
-    image: SEO,
-    to: "/services/seo",
+    to: "https://wbn-agency.vercel.app/",
   },
 ];
 
@@ -66,14 +52,14 @@ const FeatureCard = ({ card }) => {
     <motion.div
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
-      className="relative h-120 w-full rounded-[2.5rem] overflow-hidden cursor-pointer shadow-xl border border-gray-100"
+      className="relative h-120 w-full rounded-[2.5rem] overflow-hidden cursor-pointer border border-gray-100"
     >
       <motion.img
         animate={{ scale: isHovered ? 1.15 : 1 }}
         transition={{ duration: 0.8 }}
         src={card.image}
         alt={card.title}
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover object-left"
       />
       <div
         className={`absolute inset-0 transition-all duration-500 bg-linear-to-t from-[#00419B]/95 via-[#00419B]/30 to-transparent ${isHovered ? "backdrop-blur-xs" : "backdrop-blur-0"}`}
@@ -95,7 +81,7 @@ const FeatureCard = ({ card }) => {
               transition={{ duration: 0.5, ease: "easeOut" }}
               className="overflow-hidden"
             >
-              <p className="text-gray-300 text-base mb-2 leading-relaxed">
+              <p className="text-gray-100 text-base mb-2 leading-relaxed">
                 {card.desc}
               </p>
             </motion.div>
@@ -103,6 +89,7 @@ const FeatureCard = ({ card }) => {
         </AnimatePresence>
         <Link
           to={card.to}
+          target="_blank"
           className="flex items-center gap-2 mt-4 text-[#CB8104] font-bold"
         >
           <span>Learn More</span>
