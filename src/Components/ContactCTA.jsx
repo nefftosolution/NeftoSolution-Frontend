@@ -29,12 +29,12 @@ const ContactCTA = () => {
             viewport={{ once: true }}
             className="relative flex justify-center"
           >
-            <div className="relative w-[300px] h-[300px] md:w-[500px] md:h-[500px]">
+            <div className="relative w-75 h-75 md:w-125 md:h-125">
               {/* Spinning Dashed Outer Ring */}
               <motion.div
                 animate={{ rotate: 360 }}
                 transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                className="absolute inset-[-20px] border-2 border-dashed border-white/20 rounded-full"
+                className="absolute -inset-5 border-2 border-dashed border-white/20 rounded-full"
               ></motion.div>
 
               {/* Main Circular Background */}
@@ -69,7 +69,7 @@ const ContactCTA = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="relative z-10 w-48 h-48 md:w-64 md:h-64 bg-[#00419B] rounded-full border-[10px] border-white/20 flex items-center justify-center"
+                  className="relative z-10 w-48 h-48 md:w-64 md:h-64 bg-[#00419B] rounded-full border-10 border-white/20 flex items-center justify-center"
                 >
                   <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center overflow-hidden">
                     <motion.div

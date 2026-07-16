@@ -1,13 +1,13 @@
-import React, { useRef } from 'react';
-import { motion, useMotionValue, useTransform } from 'framer-motion';
-import Hamza from '../assets/images/hamza.png';
-import Ameerhamza from '../assets/images/Ameerhamza.png';
-import Sabir from '../assets/images/sabir.jpeg';
-import Mubeen from '../assets/images/mubeen.jpg';
-import Meer from '../assets/images/meer.png';
-import Talha from '../assets/images/talha.png';
-import Abeeha from '../assets/images/Abeeha.jpeg';
-import Wahaj from '../assets/images/Wahaj.jpeg';
+import React, { useRef } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
+import Hamza from "../assets/images/hamza.png";
+import Ameerhamza from "../assets/images/Ameerhamza.png";
+import Sabir from "../assets/images/sabir.jpeg";
+import Mubeen from "../assets/images/mubeen.jpg";
+import Meer from "../assets/images/meer.png";
+import Talha from "../assets/images/talha.png";
+import Abeeha from "../assets/images/Abeeha.jpeg";
+import Wahaj from "../assets/images/Wahaj.jpeg";
 
 const cardData = [
   {
@@ -20,18 +20,18 @@ const cardData = [
   },
   {
     id: 2,
+    category: "DIGITAL MARKETING",
+    title: "AMEER HAMZA",
+    description:
+      "Driving business growth through social media marketing, paid advertising, and data-driven digital strategies.",
+    image: Ameerhamza,
+  },
+  {
+    id: 3,
     category: "PERFORMANCE MARKETING",
     title: "SABIR HUSSAIN",
     description:
       "Driving business growth through data-driven marketing strategies, paid advertising, and conversion optimization.",
-    image: Sabir,
-  },
-  {
-    id: 3,
-    category: "GRAPHIC DESIGNER",
-    title: "SABIR HUSSAIN",
-    description:
-      "Creating impactful visual identities, marketing creatives, and modern designs that elevate brand presence.",
     image: Sabir,
   },
   {
@@ -61,7 +61,7 @@ const cardData = [
   {
     id: 7,
     category: "APP DEVELOPER",
-    title: "WAHAJ ALI",
+    title: "MUHAMMAD WAHAJ SAJID",
     description:
       "Creating scalable mobile applications with seamless user experiences, robust performance, and modern functionality.",
     image: Wahaj,
@@ -84,7 +84,7 @@ const PremiumCard = ({ data }) => {
   // OPTIMIZATION 1: useSpring ko hata kar CSS transitions ka use kiya hai (Bohot fast chalega)
   const rotateX = useTransform(y, [-0.5, 0.5], [7, -7]);
   const rotateY = useTransform(x, [-0.5, 0.5], [-7, 7]);
-  
+
   const imageX = useTransform(x, [-0.5, 0.5], ["-3%", "3%"]);
   const imageY = useTransform(y, [-0.5, 0.5], ["-3%", "3%"]);
 
@@ -116,9 +116,9 @@ const PremiumCard = ({ data }) => {
         style={{ x: imageX, y: imageY, scale: 1.1 }}
         className="absolute inset-0 h-full w-full will-change-transform"
       >
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center transition-all duration-500 group-hover:saturate-150"
-          style={{ backgroundImage: `url(${data.image})` }} 
+          style={{ backgroundImage: `url(${data.image})` }}
         />
         <div className="absolute inset-0 bg-black/20 transition-opacity duration-500 group-hover:opacity-20" />
       </motion.div>
@@ -128,7 +128,7 @@ const PremiumCard = ({ data }) => {
       <div className="absolute inset-0 bg-linear-to-t from-black via-black/80 to-transparent opacity-90 transition-all duration-500 group-hover:opacity-70" />
 
       {/* CONTENT CONTAINER */}
-      <div 
+      <div
         style={{ transform: "translateZ(30px)" }} // Value kam ki hai taake text jhatke na mare
         className="absolute inset-0 p-8 flex flex-col justify-end h-full z-10"
       >
@@ -165,11 +165,13 @@ const TeamGrid = () => {
   return (
     <div className="relative bg-white py-16 md:py-24 px-4 md:px-10 overflow-hidden">
       <div className="relative max-w-350 mx-auto z-10">
-        
         {/* Header */}
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-black mb-2">
-            MEET THE <span className="text-transparent bg-clip-text bg-linear-to-r from-[#b06e03] to-yellow-500">TEAM</span>
+            MEET THE{" "}
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#b06e03] to-yellow-500">
+              TEAM
+            </span>
           </h2>
           <div className="h-1 w-24 bg-linear-to-r from-transparent via-[#b06e03] to-transparent mx-auto" />
         </div>

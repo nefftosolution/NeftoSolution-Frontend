@@ -82,7 +82,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative bg-gradient-to-br from-[#f8fafc] to-[#f1f5f9] rounded-[2.5rem] lg:rounded-full shadow-2xl overflow-hidden min-h-[550px] lg:min-h-[250px] flex items-center border border-gray-100 "
+          className="relative bg-linear-to-br from-[#f8fafc] to-[#f1f5f9] rounded-[2.5rem] lg:rounded-full shadow-2xl overflow-hidden min-h-137.5 lg:min-h-62.5 flex items-center border border-gray-100 "
         >
           
           <AnimatePresence mode="wait" custom={direction}>
@@ -119,7 +119,7 @@ const Testimonials = () => {
                   animate={{ opacity: 1 }}
                   className="text-[#CB8104] mb-4 lg:mb-6 flex justify-center lg:justify-start"
                 >
-                  <svg className="w-[35px] lg:w-[45px] h-[35px] lg:h-[45px]" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.866 19.883 22 16.017 22H14.017V21ZM1 15V7C1 4.79086 2.79086 3 5 3H8C9.10457 3 10 3.89543 10 5V6C10 7.10457 9.10457 8 8 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H8C9.10457 16 10 16.8954 10 18V21H8C4.13401 22 1 18.866 1 15Z" /></svg>
+                  <svg className="w-8.75 lg:w-11.25 h-8.75 lg:h-11.25" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.866 19.883 22 16.017 22H14.017V21ZM1 15V7C1 4.79086 2.79086 3 5 3H8C9.10457 3 10 3.89543 10 5V6C10 7.10457 9.10457 8 8 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H8C9.10457 16 10 16.8954 10 18V21H8C4.13401 22 1 18.866 1 15Z" /></svg>
                 </motion.div>
                 <motion.p 
                   initial={{ opacity: 0 }}
