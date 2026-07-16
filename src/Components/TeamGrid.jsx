@@ -6,16 +6,74 @@ import Sabir from '../assets/images/sabir.jpeg';
 import Mubeen from '../assets/images/mubeen.jpg';
 import Meer from '../assets/images/meer.png';
 import Talha from '../assets/images/talha.png';
-import Ibtsam from '../assets/images/1.jpeg';
+import Abeeha from '../assets/images/Abeeha.jpeg';
+import Wahaj from '../assets/images/Wahaj.jpeg';
 
 const cardData = [
-  { id: 1, category: 'WEB DEVELOPER', title: 'MUHAMMAD HAMZA', description: 'Building secure, scalable backend architectures, APIs, and cloud services.', image: Hamza },
-  { id: 2, category: 'Performance Marketing', title: 'Sabir Hussain ', description: 'Optimizing paid advertising channels, conversion rates, and ROI metrics.', image: Sabir },
-  { id: 3, category: 'Graphic Designer', title: 'Sabir Hussain', description: 'Designing user interfaces, branding visuals, and high-fidelity graphics.', image: Sabir },
-  { id: 4, category: 'FRONTEND WEB DEVELOPER', title: 'MUHAMMAD MUBEEN AMJAD', description: 'Developing responsive UI components using React, Tailwind CSS, and Framer Motion.', image: Mubeen },
-  { id: 5, category: 'Graphic Designer', title: 'Meer Ali Abbas', description: 'Creating visually compelling brand identities, graphics, and high-fidelity mockups for digital products.', image: Meer },
-  { id: 6, category: 'MACHINE LEARNING', title: 'MUHAMMAD TALHA', description: 'Building machine learning pipelines, predictive engines, and data analytics dashboards.', image: Talha },
-  { id: 7, category: 'WEB DEVELOPER', title: 'MUHAMMAD IBTSAM', description: 'Building secure, scalable backend architectures, APIs, and cloud services.', image: Ibtsam },
+  {
+    id: 1,
+    category: "WEB DEVELOPER",
+    title: "MUHAMMAD HAMZA",
+    description:
+      "Developing high-performance web applications with secure architecture, clean code, and scalable backend solutions.",
+    image: Hamza,
+  },
+  {
+    id: 2,
+    category: "PERFORMANCE MARKETING",
+    title: "SABIR HUSSAIN",
+    description:
+      "Driving business growth through data-driven marketing strategies, paid advertising, and conversion optimization.",
+    image: Sabir,
+  },
+  {
+    id: 3,
+    category: "GRAPHIC DESIGNER",
+    title: "SABIR HUSSAIN",
+    description:
+      "Creating impactful visual identities, marketing creatives, and modern designs that elevate brand presence.",
+    image: Sabir,
+  },
+  {
+    id: 4,
+    category: "FRONTEND WEB DEVELOPER",
+    title: "MUHAMMAD MUBEEN AMJAD",
+    description:
+      "Building responsive, interactive, and user-friendly interfaces using modern frontend technologies and best practices.",
+    image: Mubeen,
+  },
+  {
+    id: 5,
+    category: "GRAPHIC DESIGNER",
+    title: "MEER ALI ABBAS",
+    description:
+      "Designing creative brand assets, social media graphics, and visually engaging experiences for digital platforms.",
+    image: Meer,
+  },
+  {
+    id: 6,
+    category: "MACHINE LEARNING ENGINEER",
+    title: "MUHAMMAD TALHA",
+    description:
+      "Developing intelligent AI solutions, predictive models, and data-driven systems to solve complex business challenges.",
+    image: Talha,
+  },
+  {
+    id: 7,
+    category: "APP DEVELOPER",
+    title: "WAHAJ ALI",
+    description:
+      "Creating scalable mobile applications with seamless user experiences, robust performance, and modern functionality.",
+    image: Wahaj,
+  },
+  {
+    id: 8,
+    category: "WEB DEVELOPER",
+    title: "ABEEHA ARSHAD",
+    description:
+      "Building secure and responsive web solutions focused on performance, usability, and business growth.",
+    image: Abeeha,
+  },
 ];
 
 // --- 3D PARALLAX CARD COMPONENT ---
