@@ -29,7 +29,7 @@ const TeamSection = () => {
             imageSrc={CEO}
             name="Abdul Ahad Dahir"
             title="Founder / CEO"
-            imagePosition="center 0%"
+            imagePosition="center 10%"
           />
 
           <TeamCard
@@ -65,7 +65,7 @@ const TeamCard = ({
           src={imageSrc}
           alt={name}
           style={{ objectPosition: imagePosition }}
-          className="w-full h-full object-cover transition ease-in-out duration-700 group-hover:scale-110"
+          className="w-full h-full object-cover transition ease-in-out duration-700 scale-110 group-hover:scale-120"
         />
 
         {/* Rest of your code */}

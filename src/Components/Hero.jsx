@@ -49,7 +49,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-[80vh] flex items-start lg:items-center overflow-hidden bg-white">
+    <section className="relative border-b border-black/5 flex items-start lg:items-center overflow-hidden bg-white">
       {/* eanimation */}
         {/* eanimatiom */}
        <div className="absolute inset-0 z-0 flex items-center justify-center">

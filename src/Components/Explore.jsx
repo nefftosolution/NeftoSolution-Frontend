@@ -20,7 +20,7 @@ const Explore = () => {
     <section
       style={{ fontFamily: "'Playfair Display', serif" }}
       // Added 'relative' and 'overflow-hidden' here to cut off dots outside the section
-      className="relative w-full min-h-[60vh] flex flex-col items-center justify-center bg-[#f8f9fa] px-6 pt-10 pb-16 text-center overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center bg-[#f8f9fa] px-6 pt-10 pb-16 text-center overflow-hidden"
     >
       {/* Animation Background */}
       <div className="absolute inset-0 z-0">

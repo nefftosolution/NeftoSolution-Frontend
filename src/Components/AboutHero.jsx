@@ -10,7 +10,7 @@ const AboutHero = () => {
   };
 
   return (
-    <div className="min-h-[60vh] py-20 w-full bg-[#FAFAFA] flex flex-col items-center justify-center font-['Outfit'] relative overflow-hidden px-4">
+    <div className="pt-20 pb-30 w-full bg-[#FAFAFA] flex flex-col items-center justify-center font-['Outfit'] relative overflow-hidden px-4">
       {/* Animation */}
       <div className="absolute inset-0 z-0 flex items-center justify-center">
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>

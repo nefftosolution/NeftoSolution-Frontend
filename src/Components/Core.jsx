@@ -102,9 +102,7 @@ const FeatureCard = ({ card }) => {
 
 const Core = () => {
   return (
-    // Update 1: Added 'min-h-screen' and 'flex-col justify-center' to ensure the section fills the viewport
-    // This forces the mouse to be inside the section when scrolling, activating the Swiper effect immediately.
-    <section className="min-h-screen py-24 bg-white px-4 sm:px-6 lg:px-8 overflow-hidden flex flex-col justify-center">
+    <section className="py-24 bg-white px-4 sm:px-6 lg:px-8 overflow-hidden flex flex-col justify-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="mb-16">
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#00419B] inline-block relative">
