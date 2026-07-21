@@ -13,7 +13,7 @@ const ClientTestimonial = ({ quote }) => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="bg-[#DCEBF2] relative flex flex-col md:flex-row items-center md:min-h-[315px] py-12 px-8 md:px-16 
+          className="bg-light-700 relative flex flex-col md:flex-row items-center md:min-h-[315px] py-12 px-8 md:px-16 
                      rounded-t-[50px] md:rounded-t-[100px] rounded-bl-[50px] md:rounded-bl-[100px] rounded-br-[20px]"
         >
           
@@ -21,16 +21,16 @@ const ClientTestimonial = ({ quote }) => {
           <div className="relative mb-8 md:mb-0 md:mr-16 flex-shrink-0">
             <div className="w-44 h-44 md:w-56 md:h-56 bg-white rounded-full flex items-center justify-center shadow-sm relative z-10">
               <div className="text-center p-4">
-                <span className="text-[#00419B] font-black text-lg md:text-xl leading-tight">
+                <span className="text-primary font-black text-lg md:text-xl leading-tight">
                   CANCER <br /> RESEARCH <br /> 
-                  <span className="text-[#CB8104]">TECHNOLOGY</span>
+                  <span className="text-accent">TECHNOLOGY</span>
                 </span>
               </div>
             </div>
 
             {/* Quote Icon */}
             <div className="absolute -top-2 -right-2 md:top-2 md:-right-4 z-20">
-              <div className="bg-[#00419B] text-white p-3 md:p-5 rounded-full shadow-xl">
+              <div className="bg-primary text-white p-3 md:p-5 rounded-full shadow-xl">
                 <Quote size={28} fill="currentColor" />
               </div>
             </div>
@@ -55,7 +55,7 @@ const ClientTestimonial = ({ quote }) => {
             >
               <a 
                 href="#" 
-                className="text-base md:text-lg font-bold text-[#00419B] border-b-2 border-[#CB8104] pb-0.5 hover:text-[#CB8104] transition-colors inline-block"
+                className="text-base md:text-lg font-bold text-primary border-b-2 border-accent pb-0.5 hover:text-accent transition-colors inline-block"
               >
                 Cancer Research Technology
               </a>

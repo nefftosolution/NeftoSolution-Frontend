@@ -69,7 +69,7 @@ const CareersScrollSection = () => {
           }}
         >
           <div className="max-w-xl">
-            <p className="text-[#b06f03] text-sm font-bold tracking-widest uppercase mb-6">
+            <p className="text-accent-dark text-sm font-bold tracking-widest uppercase mb-6">
               Latest Opportunities
             </p>
 
@@ -86,7 +86,7 @@ const CareersScrollSection = () => {
               className="inline-flex items-center gap-4 text-white font-bold group"
             >
               <span className="text-xl">Join us</span>
-              <span className="bg-[#b06f03] p-3 transition-transform duration-300 group-hover:translate-x-2">
+              <span className="bg-accent-dark p-3 transition-transform duration-300 group-hover:translate-x-2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"

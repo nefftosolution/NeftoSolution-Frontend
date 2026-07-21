@@ -1,1 +1,48 @@
 @import "tailwindcss";
+
+@theme {
+  /* Primary Brand - Blues */
+  --color-primary: #00419B;
+  --color-primary-dark: #002D6B;
+  --color-primary-navy: #0F2C5E;
+
+  /* Secondary Brand - Oranges/Golds */
+  --color-accent: #CB8104;
+  --color-accent-dark: #B06F03;
+  --color-accent-alt: #B06E03;
+  --color-accent-medium: #C47404;
+  --color-accent-light: #FFAF40;
+  --color-accent-bright: #FF6600;
+
+  /* Grayscale - Darks */
+  --color-dark-50: #444444;
+  --color-dark-100: #333333;
+  --color-dark-200: #1A1A1A;
+  --color-dark-300: #111827;
+  --color-dark-400: #0F151C;
+  --color-dark-500: #0D1017;
+  --color-dark-600: #0A0F1A;
+  --color-dark-700: #010101;
+  
+  /* Grayscale - Lights */
+  --color-light-50: #FAFAFA;
+  --color-light-100: #FAF9F6;
+  --color-light-150: #F9F9F9;
+  --color-light-200: #F8FAFC;
+  --color-light-250: #F8F9FA;
+  --color-light-300: #F8F8F7;
+  --color-light-350: #F4F7F9;
+  --color-light-400: #F4F6FA;
+  --color-light-450: #F2F5F7;
+  --color-light-500: #F1F5F9;
+  --color-light-600: #ECEFF1;
+  --color-light-700: #DCEBF2;
+  --color-light-800: #FFF7ED;
+
+  /* Misc Accents */
+  --color-cyan-bright: #00FFFF;
+  --color-purple-primary: #5227FF;
+  --color-purple-secondary: #B02BF2;
+  --color-purple-light: #B19EEF;
+  --color-pink-primary: #FF9FFC;
+}

@@ -38,13 +38,13 @@ const AboutSections = () => {
             <motion.div
               animate={{ scale: [1, 1.1, 1], opacity: [0.1, 0.2, 0.1] }}
               transition={{ duration: 4, repeat: Infinity }}
-              className="absolute -top-10 -left-10 w-40 h-40 bg-[#CB8104] rounded-full blur-3xl"
+              className="absolute -top-10 -left-10 w-40 h-40 bg-accent rounded-full blur-3xl"
             ></motion.div>
-            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-[#00419B]/5 rounded-full blur-3xl"></div>
+            <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-primary/5 rounded-full blur-3xl"></div>
 
             <div className="relative z-10 flex justify-center lg:justify-start">
               <div className="relative w-70 h-70 sm:w-87.5 sm:h-87.5 md:w-112.5 md:h-112.5">
-                <div className="absolute inset-0 border-15 border-[#00419B]/10 rounded-full"></div>
+                <div className="absolute inset-0 border-15 border-primary/10 rounded-full"></div>
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{
@@ -52,7 +52,7 @@ const AboutSections = () => {
                     repeat: Infinity,
                     ease: "linear",
                   }}
-                  className="absolute -inset-4 border-2 border-dashed border-[#CB8104]/30 rounded-full"
+                  className="absolute -inset-4 border-2 border-dashed border-accent/30 rounded-full"
                 ></motion.div>
 
                 <motion.div
@@ -78,11 +78,11 @@ const AboutSections = () => {
           >
             <motion.h2
               variants={fadeInRight}
-              className="text-4xl md:text-5xl font-extrabold text-[#00419B] relative inline-block"
+              className="text-4xl md:text-5xl font-extrabold text-primary relative inline-block"
             >
               About Us
               <svg
-                className="absolute -bottom-2 left-0 w-full h-3 text-[#CB8104]"
+                className="absolute -bottom-2 left-0 w-full h-3 text-accent"
                 viewBox="0 0 100 10"
                 preserveAspectRatio="none"
               >
@@ -106,7 +106,7 @@ const AboutSections = () => {
               clear direction. We build reliable software solutions and
               thoughtful digital experiences that are meant to last. Our focus
               is simple and disciplined: create{" "}
-              <span className="text-[#00419B] font-bold border-b-2 border-[#CB8104]">
+              <span className="text-primary font-bold border-b-2 border-accent">
                 products and services that deliver real value
               </span>
               , support sustainable growth, and enable meaningful change for
@@ -117,10 +117,10 @@ const AboutSections = () => {
             <motion.div variants={fadeInRight}>
               <Link
                 to="/about"
-                className="group relative hover:scale-105 inline-flex items-center justify-center px-10 py-4 border-2 border-[#00419B] rounded-full font-bold text-[#00419B] overflow-hidden transition-all duration-300 hover:text-white shadow-lg"
+                className="group relative hover:scale-105 inline-flex items-center justify-center px-10 py-4 border-2 border-primary rounded-full font-bold text-primary overflow-hidden transition-all duration-300 hover:text-white shadow-lg"
               >
                 {/* Sliding Background */}
-                <span className="absolute inset-0 bg-[#00419B] scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+                <span className="absolute inset-0 bg-primary scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
 
                 {/* Text */}
                 <span className="relative z-10">Explore our Culture</span>
@@ -143,7 +143,7 @@ const AboutSections = () => {
             >
               <motion.h2
                 variants={fadeInLeft}
-                className="text-4xl md:text-5xl font-extrabold text-[#00419B]"
+                className="text-4xl md:text-5xl font-extrabold text-primary"
               >
                 Force for Good
               </motion.h2>
@@ -161,10 +161,10 @@ const AboutSections = () => {
               <motion.div variants={fadeInRight}>
                 <Link
                   to="/services"
-                  className="group relative inline-flex items-center justify-center px-10 py-4 border-2 border-[#CB8104] rounded-full font-bold text-[#00419B] overflow-hidden transition-all duration-300 hover:text-white shadow-lg"
+                  className="group relative inline-flex items-center justify-center px-10 py-4 border-2 border-accent rounded-full font-bold text-primary overflow-hidden transition-all duration-300 hover:text-white shadow-lg"
                 >
                   {/* Sliding Background */}
-                  <span className="absolute inset-0 bg-[#00419B] scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
+                  <span className="absolute inset-0 bg-primary scale-x-0 origin-left transition-transform duration-300 ease-out group-hover:scale-x-100"></span>
 
                   {/* Text */}
                   <span className="relative z-10">How we work for good</span>
@@ -183,7 +183,7 @@ const AboutSections = () => {
               <motion.div
                 animate={{ scale: [1, 1.05, 1] }}
                 transition={{ duration: 5, repeat: Infinity }}
-                className="absolute -left-5 top-80 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 border-20 border-[#00419B]/10 rounded-full"
+                className="absolute -left-5 top-80 -translate-y-1/2 w-32 h-32 md:w-48 md:h-48 border-20 border-primary/10 rounded-full"
               ></motion.div>
               <div className="relative w-70 h-70 sm:w-87.5 sm:h-87.5 md:w-112.5 md:h-112.5">
                 <motion.div
@@ -204,17 +204,17 @@ const AboutSections = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-[#fff7ed] rounded-full shadow-xl z-20 flex items-center justify-center p-6 border border-white"
+                  className="absolute -top-6 -left-6 w-24 h-24 md:w-32 md:h-32 bg-light-800 rounded-full shadow-xl z-20 flex items-center justify-center p-6 border border-white"
                 >
                   <svg
-                    className="w-full h-full text-[#CB8104]"
+                    className="w-full h-full text-accent"
                     fill="currentColor"
                     viewBox="0 0 24 24"
                   >
                     <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
                   </svg>
                 </motion.div>
-                <div className="absolute bottom-18 -right-20 w-48 h-48 md:w-64 md:h-64 bg-[#00419B] rounded-full opacity-10 z-0"></div>
+                <div className="absolute bottom-18 -right-20 w-48 h-48 md:w-64 md:h-64 bg-primary rounded-full opacity-10 z-0"></div>
               </div>
             </motion.div>
           </div>

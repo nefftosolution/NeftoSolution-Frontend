@@ -60,9 +60,9 @@ const Testimonials = () => {
           transition={{ duration: 0.8 }}
           className="mb-12 lg:mb-16 text-center lg:text-left"
         >
-          <h2 className="text-3xl lg:text-5xl font-extrabold text-[#00419B] inline-block relative">
+          <h2 className="text-3xl lg:text-5xl font-extrabold text-primary inline-block relative">
             What our clients say
-            <svg className="absolute -bottom-3 left-0 w-full h-3 text-[#CB8104]" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg className="absolute -bottom-3 left-0 w-full h-3 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
               <motion.path 
                 initial={{ pathLength: 0 }}
                 whileInView={{ pathLength: 1 }}
@@ -82,7 +82,7 @@ const Testimonials = () => {
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1 }}
-          className="relative bg-linear-to-br from-[#f8fafc] to-[#f1f5f9] rounded-[2.5rem] lg:rounded-full shadow-2xl overflow-hidden min-h-137.5 lg:min-h-62.5 flex items-center border border-gray-100 "
+          className="relative bg-linear-to-br from-light-200 to-light-500 rounded-[2.5rem] lg:rounded-full shadow-2xl overflow-hidden min-h-137.5 lg:min-h-62.5 flex items-center border border-gray-100 "
         >
           
           <AnimatePresence mode="wait" custom={direction}>
@@ -101,7 +101,7 @@ const Testimonials = () => {
                   <motion.div 
                     animate={{ rotate: 360 }}
                     transition={{ duration: 30, repeat: Infinity, ease: "linear" }}
-                    className="absolute inset-0 border-2 border-dashed border-[#CB8104]/40 rounded-full"
+                    className="absolute inset-0 border-2 border-dashed border-accent/40 rounded-full"
                   ></motion.div>
                   <motion.div 
                     whileHover={{ scale: 1.05 }}
@@ -117,7 +117,7 @@ const Testimonials = () => {
                 <motion.div 
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
-                  className="text-[#CB8104] mb-4 lg:mb-6 flex justify-center lg:justify-start"
+                  className="text-accent mb-4 lg:mb-6 flex justify-center lg:justify-start"
                 >
                   <svg className="w-8.75 lg:w-11.25 h-8.75 lg:h-11.25" viewBox="0 0 24 24" fill="currentColor"><path d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H16.017C14.9124 8 14.017 7.10457 14.017 6V5C14.017 3.89543 14.9124 3 16.017 3H19.017C21.2261 3 23.017 4.79086 23.017 7V15C23.017 18.866 19.883 22 16.017 22H14.017V21ZM1 15V7C1 4.79086 2.79086 3 5 3H8C9.10457 3 10 3.89543 10 5V6C10 7.10457 9.10457 8 8 8H5C4.44772 8 4 8.44772 4 9V15C4 15.5523 4.44772 16 5 16H8C9.10457 16 10 16.8954 10 18V21H8C4.13401 22 1 18.866 1 15Z" /></svg>
                 </motion.div>
@@ -134,11 +134,11 @@ const Testimonials = () => {
                   <motion.div 
                     initial={{ height: 0 }}
                     animate={{ height: "48px" }}
-                    className="hidden lg:block w-1.5 bg-[#00419B] rounded-full"
+                    className="hidden lg:block w-1.5 bg-primary rounded-full"
                   ></motion.div>
-                  <div className="border-l-4 border-[#00419B] lg:border-none pl-4 lg:pl-0">
+                  <div className="border-l-4 border-primary lg:border-none pl-4 lg:pl-0">
                     <h4 className="text-lg lg:text-xl font-bold text-gray-900 leading-none">{testimonials[current].author}</h4>
-                    <p className="text-[#CB8104] font-semibold text-xs lg:text-sm mt-1">{testimonials[current].company}</p>
+                    <p className="text-accent font-semibold text-xs lg:text-sm mt-1">{testimonials[current].company}</p>
                   </div>
                 </div>
               </div>
@@ -154,15 +154,15 @@ const Testimonials = () => {
             {/* Dots */}
             <div className="flex gap-2 px-4 py-2 lg:py-0 lg:border-r lg:border-gray-300">
               {testimonials.map((_, i) => (
-                <button key={i} onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }} className={`h-2 rounded-full transition-all duration-500 ${i === current ? 'bg-[#00419B] w-6 lg:w-8' : 'bg-gray-300 w-2 hover:bg-[#CB8104]'}`} />
+                <button key={i} onClick={() => { setDirection(i > current ? 1 : -1); setCurrent(i); }} className={`h-2 rounded-full transition-all duration-500 ${i === current ? 'bg-primary w-6 lg:w-8' : 'bg-gray-300 w-2 hover:bg-accent'}`} />
               ))}
             </div>
             {/* Arrows */}
             <div className="flex gap-3 px-2 mt-2 lg:mt-0">
-              <motion.button whileTap={{ scale: 0.9 }} onClick={() => paginate(-1)} className="w-10 h-10 lg:w-12 lg:h-12 bg-[#00419B] text-white rounded-full flex items-center justify-center hover:bg-[#CB8104] transition-colors shadow-md cursor-pointer">
+              <motion.button whileTap={{ scale: 0.9 }} onClick={() => paginate(-1)} className="w-10 h-10 lg:w-12 lg:h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-accent transition-colors shadow-md cursor-pointer">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M15 19l-7-7 7-7" /></svg>
               </motion.button>
-              <motion.button whileTap={{ scale: 0.9 }} onClick={() => paginate(1)} className="w-10 h-10 lg:w-12 lg:h-12 bg-[#00419B] text-white rounded-full flex items-center justify-center hover:bg-[#CB8104] transition-colors shadow-md cursor-pointer">
+              <motion.button whileTap={{ scale: 0.9 }} onClick={() => paginate(1)} className="w-10 h-10 lg:w-12 lg:h-12 bg-primary text-white rounded-full flex items-center justify-center hover:bg-accent transition-colors shadow-md cursor-pointer">
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7" /></svg>
               </motion.button>
             </div>

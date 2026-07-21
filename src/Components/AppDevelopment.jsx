@@ -45,7 +45,7 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
       
       {/* --- SECTION 1: HERO SECTION --- */}
       <section className="py-12 md:py-20 px-6 md:px-12 lg:px-24 relative">
-        <div className="absolute top-0 right-0 w-1/4 h-full bg-[#00419B]/5 -skew-x-12 transform translate-x-16 hidden lg:block"></div>
+        <div className="absolute top-0 right-0 w-1/4 h-full bg-primary/5 -skew-x-12 transform translate-x-16 hidden lg:block"></div>
 
         <motion.div 
           variants={containerVariants}
@@ -55,18 +55,18 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
         >
           {/* Breadcrumb Section */}
           <motion.div variants={itemVariants} className="flex items-center gap-2 mb-8 text-xs md:text-sm font-bold tracking-wide uppercase">
-            <Link to="/" className="text-gray-500 hover:text-[#00419B]">Home</Link>
-            <span className="text-[#CB8104]">›</span>
-            <Link to="/services" className="text-gray-500 hover:text-[#00419B]">What We Do</Link>
-            <span className="text-[#CB8104]">›</span>
+            <Link to="/" className="text-gray-500 hover:text-primary">Home</Link>
+            <span className="text-accent">›</span>
+            <Link to="/services" className="text-gray-500 hover:text-primary">What We Do</Link>
+            <span className="text-accent">›</span>
             <span className="text-gray-400">App Development</span>
           </motion.div>
 
           {/* Main Heading updated for App Development */}
-          <motion.h1 variants={itemVariants} className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-[#00419B] leading-tight mb-8 max-w-4xl tracking-tight">
+          <motion.h1 variants={itemVariants} className="text-3xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight mb-8 max-w-4xl tracking-tight">
             Mobile Application <span className="relative inline-block">
               Development,
-              <svg className="absolute -bottom-1 left-0 w-full h-3 text-[#CB8104]" viewBox="0 0 100 10" preserveAspectRatio="none">
+              <svg className="absolute -bottom-1 left-0 w-full h-3 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
                 <motion.path initial={{ pathLength: 0 }} animate={{ pathLength: 1 }} transition={{ duration: 1.2, delay: 0.8 }} d="M0 5 Q 25 0, 50 5 T 100 5" stroke="currentColor" strokeWidth="4" fill="transparent" />
               </svg>
             </span> <br className="hidden md:block" />
@@ -76,13 +76,13 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
 
           {/* Description Paragraph updated */}
           <motion.p variants={itemVariants} className="text-base md:text-lg lg:text-xl text-gray-600 leading-relaxed max-w-3xl font-medium">
-            Working with your business goals in mind in a collaborative, transparent, <span className="text-[#00419B] font-semibold">Agile way</span>, our team of developers deliver secure, intuitive, high-performing mobile applications for iOS and Android.
+            Working with your business goals in mind in a collaborative, transparent, <span className="text-primary font-semibold">Agile way</span>, our team of developers deliver secure, intuitive, high-performing mobile applications for iOS and Android.
           </motion.p>
         </motion.div>
       </section>
 
       {/* --- SECTION 2: ROBUST SOLUTIONS (Updated for Apps) --- */}
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 relative bottom-10 bg-[#F4F6FA]">
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 relative bottom-10 bg-light-400">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             
@@ -93,22 +93,22 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
               viewport={{ once: true }} 
               className="space-y-8"
             >
-              <h2 className="text-3xl md:text-5xl lg:text-6x1 font-extrabold text-[#00419B] leading-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-6x1 font-extrabold text-primary leading-tight">
                 Developing robust, cross-platform mobile solutions
               </h2>
               
               <div className="text-gray-600 text-lg md:text-xl leading-relaxed space-y-8">
                 <p>
-                  Leveraging the insights from our <span className="text-[#00419B] font-bold border-b-2 border-[#CB8104]">Mobile UI and UX design experts</span>, our team can create native-feel solutions for your organisation.
+                  Leveraging the insights from our <span className="text-primary font-bold border-b-2 border-accent">Mobile UI and UX design experts</span>, our team can create native-feel solutions for your organisation.
                 </p>
                 <p>
-                  While <span className="text-[#00419B] font-bold border-b-2 border-[#CB8104]">App store performance audits</span> hone the experience, <span className="text-[#00419B] font-bold">Agile sprint cycles</span> let you test MVP products faster.
+                  While <span className="text-primary font-bold border-b-2 border-accent">App store performance audits</span> hone the experience, <span className="text-primary font-bold">Agile sprint cycles</span> let you test MVP products faster.
                 </p>
                 <p>
-                  Our <span className="font-bold text-[#00419B]">ISO 27001-certified</span> process ensures data security in every build. We specialize in <span className="text-[#CB8104] font-bold border-b-2 border-[#CB8104]">Flutter and React Native development</span>.
+                  Our <span className="font-bold text-primary">ISO 27001-certified</span> process ensures data security in every build. We specialize in <span className="text-accent font-bold border-b-2 border-accent">Flutter and React Native development</span>.
                 </p>
                 <p>
-                  We deliver <span className="text-[#00419B] font-bold border-b-2 border-[#00419B]">apps using Swift and Kotlin</span>, providing consultancy, app store deployment, and <span className="text-[#00419B] font-bold border-b-2 border-[#CB8104]">Real-time API services</span>.
+                  We deliver <span className="text-primary font-bold border-b-2 border-primary">apps using Swift and Kotlin</span>, providing consultancy, app store deployment, and <span className="text-primary font-bold border-b-2 border-accent">Real-time API services</span>.
                 </p>
               </div>
             </motion.div>
@@ -120,7 +120,7 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
               viewport={{ once: true }}
               className="relative h-[350px] md:h-[500px] w-full"
             >
-              <div className="absolute top-1/2 left-[-40px] w-[100px] h-[8px] bg-[#CB8104] rounded-full z-0 hidden lg:block"></div>
+              <div className="absolute top-1/2 left-[-40px] w-[100px] h-[8px] bg-accent rounded-full z-0 hidden lg:block"></div>
               <div className="relative z-10 h-full w-full overflow-hidden rounded-[2.5rem] shadow-2xl border-4 border-white group">
                 <AnimatePresence mode="wait">
                   <motion.div
@@ -132,11 +132,11 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
                     className="absolute inset-0"
                   >
                     <img src={slides[currentSlide].url} alt={slides[currentSlide].title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#00419B]/40 to-transparent"></div>
+                    <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
                   </motion.div>
                 </AnimatePresence>
                 <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                  <div className="bg-[#CB8104]/95 backdrop-blur-sm px-8 py-3 rounded-2xl shadow-2xl">
+                  <div className="bg-accent/95 backdrop-blur-sm px-8 py-3 rounded-2xl shadow-2xl">
                     <span className="text-white text-lg md:text-2xl font-black uppercase tracking-widest">{slides[currentSlide].title}</span>
                   </div>
                 </div>
@@ -167,7 +167,7 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
                 />
               </div>
               {/* Subtle accent glow */}
-              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-[#CB8104]/10 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-accent/10 rounded-full blur-3xl -z-10"></div>
             </motion.div>
 
             {/* Right Column: Content updated for App Compliance */}
@@ -178,19 +178,19 @@ const AppDevelopment = () => { // Name changed to AppDevelopment
               transition={{ duration: 0.8 }}
               className="space-y-8"
             >
-              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#00419B] leading-tight tracking-tight">
+              <h2 className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-primary leading-tight tracking-tight">
                 Human-centred, high-performance and platform-compliant code
               </h2>
               
               <div className="text-gray-600 text-lg md:text-xl leading-relaxed space-y-6">
                 <p>
-                  Throughout our mobile application development process, we ensure our code follows <span className="text-[#00419B] font-bold border-b-2 border-[#CB8104]">Apple and Android Accessibility Standards</span>, providing a smooth experience for all users.
+                  Throughout our mobile application development process, we ensure our code follows <span className="text-primary font-bold border-b-2 border-accent">Apple and Android Accessibility Standards</span>, providing a smooth experience for all users.
                 </p>
                 <p>
                   Every app is reviewed through continuous unit testing and QA. We focus on low latency and smooth animations to ensure the final product fulfills your users’ needs perfectly.
                 </p>
                 <p>
-                  We have extensive experience in platforms like <span className="text-[#00419B] font-bold border-b-2 border-[#00419B]">React Native</span> and <span className="text-[#00419B] font-bold border-b-2 border-[#00419B]">Flutter</span>, ensuring your app reaches the widest audience with the best performance.
+                  We have extensive experience in platforms like <span className="text-primary font-bold border-b-2 border-primary">React Native</span> and <span className="text-primary font-bold border-b-2 border-primary">Flutter</span>, ensuring your app reaches the widest audience with the best performance.
                 </p>
               </div>
             </motion.div>

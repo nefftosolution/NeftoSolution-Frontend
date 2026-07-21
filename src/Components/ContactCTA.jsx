@@ -18,7 +18,7 @@ const ContactCTA = () => {
   };
 
   return (
-    <section className="py-20 bg-[#00419B] overflow-hidden">
+    <section className="py-20 bg-primary overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* LEFT SIDE: ABSTRACT GRAPHIC */}
@@ -38,7 +38,7 @@ const ContactCTA = () => {
               ></motion.div>
 
               {/* Main Circular Background */}
-              <div className="absolute inset-0 bg-[#002d6b] rounded-full overflow-hidden border-4 border-white/10 shadow-2xl flex items-center justify-center">
+              <div className="absolute inset-0 bg-primary-dark rounded-full overflow-hidden border-4 border-white/10 shadow-2xl flex items-center justify-center">
                 {/* 1. Monochrome Photo Overlay - Slide from Top-Right */}
                 <motion.div
                   initial={{ x: 50, y: -50, opacity: 0 }}
@@ -58,7 +58,7 @@ const ContactCTA = () => {
                   initial={{ x: -50, y: 50, opacity: 0 }}
                   whileInView={{ x: 0, y: 0, opacity: 0.9 }}
                   transition={{ duration: 1, delay: 0.5 }}
-                  className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#CB8104] rounded-tr-full"
+                  className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-accent rounded-tr-full"
                 ></motion.div>
 
                 {/* 3. Central Eye Pupil Structure - Subtle Breathing Animation */}
@@ -69,7 +69,7 @@ const ContactCTA = () => {
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="relative z-10 w-48 h-48 md:w-64 md:h-64 bg-[#00419B] rounded-full border-10 border-white/20 flex items-center justify-center"
+                  className="relative z-10 w-48 h-48 md:w-64 md:h-64 bg-primary rounded-full border-10 border-white/20 flex items-center justify-center"
                 >
                   <div className="w-24 h-24 md:w-32 md:h-32 bg-white rounded-full flex items-center justify-center overflow-hidden">
                     <motion.div
@@ -99,7 +99,7 @@ const ContactCTA = () => {
                   initial={{ y: 50, opacity: 0 }}
                   whileInView={{ y: 0, opacity: 1 }}
                   transition={{ delay: 0.8, duration: 1 }}
-                  className="absolute bottom-18 right-18 text-[#CB8104]"
+                  className="absolute bottom-18 right-18 text-accent"
                 >
                   <svg
                     width="60"
@@ -134,7 +134,7 @@ const ContactCTA = () => {
               className="text-4xl md:text-6xl font-extrabold leading-tight"
             >
               Share your vision. <br />
-              <span className="text-[#CB8104]">Let’s Build It Together</span>
+              <span className="text-accent">Let’s Build It Together</span>
             </motion.h2>
 
             <motion.p
@@ -155,10 +155,10 @@ const ContactCTA = () => {
               >
                 <Link
                   to="/contact"
-                  className="group relative inline-flex items-center justify-center px-10 py-4 border-2 border-white rounded-full font-bold text-xl text-white overflow-hidden transition-all hover:border-[#CB8104] hover:text-white cursor-pointer"
+                  className="group relative inline-flex items-center justify-center px-10 py-4 border-2 border-white rounded-full font-bold text-xl text-white overflow-hidden transition-all hover:border-accent hover:text-white cursor-pointer"
                 >
                   {/* Sliding Background */}
-                  <span className="absolute inset-0 bg-[#CB8104] scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
+                  <span className="absolute inset-0 bg-accent scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
 
                   {/* Text */}
                   <span className="relative z-10">Talk to us</span>

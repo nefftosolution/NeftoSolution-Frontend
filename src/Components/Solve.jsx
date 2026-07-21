@@ -13,7 +13,7 @@ const Solve = () => {
 
       {/* Main Container */}
       <div 
-        className="bg-[#f2f5f7] rounded-[40px] p-8 md:p-16 lg:p-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
+        className="bg-light-450 rounded-[40px] p-8 md:p-16 lg:p-24 flex flex-col lg:flex-row items-center gap-12 lg:gap-20"
         style={{ fontFamily: "'Playfair Display', serif" }}
       >
         
@@ -71,7 +71,7 @@ const Solve = () => {
             style={{ color: '#00419B' }}
           >
             <span className="text-lg">Learn more about us</span>
-            <span className="bg-[#00419B] text-white p-2 rounded-full transition-all duration-300 group-hover:bg-[#CB8104] group-hover:translate-x-1 group-hover:-translate-y-1">
+            <span className="bg-primary text-white p-2 rounded-full transition-all duration-300 group-hover:bg-accent group-hover:translate-x-1 group-hover:-translate-y-1">
               <FiArrowUpRight size={20} />
             </span>
           </Link>
@@ -79,7 +79,7 @@ const Solve = () => {
 
         {/* Right Side: Image with Floating Badge */}
         <div className="w-full lg:w-1/2 relative">
-          <div className="rounded-[30px] overflow-hidden shadow-xl bg-[#000000] border-4 border-white">
+          <div className="rounded-[30px] overflow-hidden shadow-xl bg-black border-4 border-white">
             <img 
               src={GrowYourBusiness}
               alt="Grow Your Business" 

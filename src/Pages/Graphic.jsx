@@ -14,9 +14,9 @@ const GraphicDesign = () => {
       <ClientTestimonial 
         quote={
           <>
-            "We selected NEFTTO IT Solution for our <span className="text-[#00419B] font-bold">Graphic Design and Branding</span> project 
+            "We selected NEFTTO IT Solution for our <span className="text-primary font-bold">Graphic Design and Branding</span> project 
             following a competitive tender, and have been delighted by the team’s creativity 
-            and strategic approach, delivering <span className="text-[#00419B] font-bold">stunning visual identities</span> in tight timelines and on budget."
+            and strategic approach, delivering <span className="text-primary font-bold">stunning visual identities</span> in tight timelines and on budget."
           </>
         }
       />

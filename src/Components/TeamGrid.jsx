@@ -109,7 +109,7 @@ const PremiumCard = ({ data }) => {
         transformStyle: "preserve-3d",
       }}
       // OPTIMIZATION 2: will-change-transform add kiya hai taake browser isse GPU par render kare
-      className="group relative h-95 sm:h-105 md:h-112.5 w-full rounded-3xl bg-[#1a1a1a] shadow-xl overflow-hidden cursor-pointer border border-white/10 will-change-transform transition-all duration-200 ease-out"
+      className="group relative h-95 sm:h-105 md:h-112.5 w-full rounded-3xl bg-dark-200 shadow-xl overflow-hidden cursor-pointer border border-white/10 will-change-transform transition-all duration-200 ease-out"
     >
       {/* BACKGROUND IMAGE */}
       <motion.div
@@ -124,7 +124,7 @@ const PremiumCard = ({ data }) => {
       </motion.div>
 
       {/* GRADIENTS */}
-      <div className="absolute inset-0 bg-linear-to-t from-[#b06e03] via-black/50 to-transparent opacity-60 translate-y-[40%] transition-transform duration-500 group-hover:translate-y-[20%] group-hover:opacity-90 mix-blend-overlay" />
+      <div className="absolute inset-0 bg-linear-to-t from-accent-alt via-black/50 to-transparent opacity-60 translate-y-[40%] transition-transform duration-500 group-hover:translate-y-[20%] group-hover:opacity-90 mix-blend-overlay" />
       <div className="absolute inset-0 bg-linear-to-t from-black via-black/80 to-transparent opacity-90 transition-all duration-500 group-hover:opacity-70" />
 
       {/* CONTENT CONTAINER */}
@@ -135,7 +135,7 @@ const PremiumCard = ({ data }) => {
         <div className="absolute top-8 right-8 w-12 h-12 border-t-2 border-r-2 border-white/20 rounded-tr-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
         <div className="mb-2">
-          <p className="text-[#ffaf40] font-bold text-xs tracking-[3px] uppercase">
+          <p className="text-accent-light font-bold text-xs tracking-[3px] uppercase">
             {data.category}
           </p>
         </div>
@@ -147,7 +147,7 @@ const PremiumCard = ({ data }) => {
         {/* Description */}
         <div className="grid grid-rows-[0fr] group-hover:grid-rows-[1fr] transition-[grid-template-rows] duration-500 ease-[cubic-bezier(0.22,1,0.36,1)]">
           <div className="overflow-hidden">
-            <p className="text-gray-300 text-sm leading-relaxed py-1 border-l-2 border-[#b06e03] pl-4">
+            <p className="text-gray-300 text-sm leading-relaxed py-1 border-l-2 border-accent-alt pl-4">
               {data.description}
             </p>
           </div>
@@ -169,11 +169,11 @@ const TeamGrid = () => {
         <div className="text-center mb-20">
           <h2 className="text-5xl md:text-6xl font-black tracking-tighter text-black mb-2">
             MEET THE{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-r from-[#b06e03] to-yellow-500">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-accent-alt to-yellow-500">
               TEAM
             </span>
           </h2>
-          <div className="h-1 w-24 bg-linear-to-r from-transparent via-[#b06e03] to-transparent mx-auto" />
+          <div className="h-1 w-24 bg-linear-to-r from-transparent via-accent-alt to-transparent mx-auto" />
         </div>
 
         {/* Cards Grid */}

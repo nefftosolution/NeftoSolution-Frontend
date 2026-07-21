@@ -20,7 +20,7 @@ const Explore = () => {
     <section
       style={{ fontFamily: "'Playfair Display', serif" }}
       // Added 'relative' and 'overflow-hidden' here to cut off dots outside the section
-      className="relative w-full flex flex-col items-center justify-center bg-[#f8f9fa] px-6 pt-10 pb-16 text-center overflow-hidden"
+      className="relative w-full flex flex-col items-center justify-center bg-light-250 px-6 pt-10 pb-16 text-center overflow-hidden"
     >
       {/* Animation Background */}
       <div className="absolute inset-0 z-0">
@@ -56,7 +56,7 @@ const Explore = () => {
 
         {/* Main Heading with Gradient */}
         <h1
-          className="text-[50px] md:text-[80px] lg:text-[96px] leading-[1.1] font-bold mb-6 bg-linear-to-r from-[#CB8104] to-[#00419B] bg-clip-text text-transparent"
+          className="text-[50px] md:text-[80px] lg:text-[96px] leading-[1.1] font-bold mb-6 bg-linear-to-r from-accent to-primary bg-clip-text text-transparent"
         >
           Explore Our <br /> Services
         </h1>
@@ -70,7 +70,7 @@ const Explore = () => {
         {/* Down Arrow Button */}
         <button
           onClick={handleScrollDown}
-          className="group relative flex items-center justify-center w-12 h-12 bg-[#FF6600] text-white rounded-full transition-transform hover:scale-110 cursor-pointer shadow-xl animate-bounce"
+          className="group relative flex items-center justify-center w-12 h-12 bg-accent-bright text-white rounded-full transition-transform hover:scale-110 cursor-pointer shadow-xl animate-bounce"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

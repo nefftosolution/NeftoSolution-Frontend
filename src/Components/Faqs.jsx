@@ -42,7 +42,7 @@ const Faqs = () => {
   };
 
   return (
-    <section className="w-full py-16 lg:py-24 px-4 md:px-10 lg:px-20 bg-[#f8fafc]">
+    <section className="w-full py-16 lg:py-24 px-4 md:px-10 lg:px-20 bg-light-200">
       {/* Google Font Import */}
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');`}

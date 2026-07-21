@@ -70,7 +70,7 @@ const Services = () => {
           transition={{ duration: 0.8 }}
           className="mb-16 max-w-3xl"
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#00419B] mb-6">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-primary mb-6">
             Our services
           </h2>
           <p className="text-lg text-gray-600 leading-relaxed">
@@ -99,11 +99,11 @@ const Services = () => {
                   className="absolute inset-0 h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"
                 />
                 
-                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent group-hover:from-[#00419B]/90 transition-all duration-500"></div>
+                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent group-hover:from-primary/90 transition-all duration-500"></div>
 
                 <div className="absolute bottom-0 left-0 p-8 w-full transform translate-y-2 group-hover:translate-y-0 transition-transform duration-500">
                   <div className="flex items-center gap-4">
-                    <span className="text-[#CB8104] transform group-hover:translate-x-2 transition-transform duration-300">
+                    <span className="text-accent transform group-hover:translate-x-2 transition-transform duration-300">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M5 12H19M19 12L13 6M19 12L13 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
@@ -114,7 +114,7 @@ const Services = () => {
                   </div>
                 </div>
 
-                <div className="absolute top-0 left-0 w-0 h-1 bg-[#CB8104] group-hover:w-full transition-all duration-700"></div>
+                <div className="absolute top-0 left-0 w-0 h-1 bg-accent group-hover:w-full transition-all duration-700"></div>
               </motion.div>
             </Link>
           ))}

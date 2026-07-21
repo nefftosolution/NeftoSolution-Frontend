@@ -11,7 +11,7 @@ const Number = () => {
   ];
 
   return (
-    <section className="w-full py-16 px-4 md:px-10 lg:px-20 bg-[#f4f7f9]">
+    <section className="w-full py-16 px-4 md:px-10 lg:px-20 bg-light-350">
       {/* Google Font Import */}
       <style>
         {`@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');`}
@@ -70,14 +70,14 @@ const Number = () => {
           </p>
           
           {/* UPDATED BUTTON: Golden Flow Effect */}
-          <Link to={"/about"} className="group relative overflow-hidden bg-white border border-[#CB8104] text-[#CB8104] px-10 py-4 rounded-full transition-all duration-300 cursor-pointer shadow-xl flex items-center gap-3">
+          <Link to={"/about"} className="group relative overflow-hidden bg-white border border-accent text-accent px-10 py-4 rounded-full transition-all duration-300 cursor-pointer shadow-xl flex items-center gap-3">
             {/* Background Flow Layer */}
-            <span className="absolute inset-0 bg-[#CB8104] transition-transform duration-500 ease-out -translate-x-full group-hover:translate-x-0"></span>
+            <span className="absolute inset-0 bg-accent transition-transform duration-500 ease-out -translate-x-full group-hover:translate-x-0"></span>
             
             {/* Button Content */}
             <span className="relative z-10 flex items-center gap-3 transition-colors duration-300 group-hover:text-white">
               <span className="font-semibold text-lg">About Us</span>
-              <div className="bg-[#CB8104]/10 group-hover:bg-white/20 p-1 rounded-full transition-all duration-300 group-hover:rotate-45">
+              <div className="bg-accent/10 group-hover:bg-white/20 p-1 rounded-full transition-all duration-300 group-hover:rotate-45">
                   <FiArrowUpRight size={20} />
               </div>
             </span>
@@ -98,7 +98,7 @@ const Number = () => {
 
               {/* Statistic Value */}
               <h3 
-                className="text-6xl font-bold mb-3 transition-colors duration-300 group-hover:text-[#CB8104]"
+                className="text-6xl font-bold mb-3 transition-colors duration-300 group-hover:text-accent"
                 style={{ color: '#00419B' }}
               >
                 {item.value}

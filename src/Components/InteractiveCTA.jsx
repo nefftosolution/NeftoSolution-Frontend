@@ -16,7 +16,7 @@ const InteractiveCTA = () => {
   };
 
   return (
-    <section className="relative w-full bg-[#0d1017] py-24 px-4 flex flex-col items-center justify-center text-center font-sans overflow-hidden">
+    <section className="relative w-full bg-dark-500 py-24 px-4 flex flex-col items-center justify-center text-center font-sans overflow-hidden">
       {/* Liquid Background */}
       <div style={styles.absBg}>
         <Liquid
@@ -49,7 +49,7 @@ const InteractiveCTA = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
           Let's create <br className="hidden md:block" />
           something <br className="hidden md:block" />
-          <span className="bg-linear-to-r from-[#b06f03] to-[#00419B] bg-clip-text text-transparent">
+          <span className="bg-linear-to-r from-accent-dark to-primary bg-clip-text text-transparent">
             extraordinary
           </span>
         </h1>

@@ -4,12 +4,12 @@ import NEFTO from '../assets/images/NEFTO.png'
 
 const DesignIntro = () => {
   return (
-    <section className="w-full bg-[#f9f9f9] py-20 px-6 font-['Outfit'] flex items-center justify-center">
+    <section className="w-full bg-light-150 py-20 px-6 font-['Outfit'] flex items-center justify-center">
       <div className="max-w-7xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* --- Left Side: Text Content --- */}
         <div className="space-y-8 md:pr-10">
           {/* Main Headline */}
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-[#0f151c] leading-[1.1] tracking-tight md:ml-5">
+          <h2 className="text-4xl md:text-6xl lg:text-7xl font-semibold text-dark-400 leading-[1.1] tracking-tight md:ml-5">
             We design digital products <br />
             built to grow
           </h2>

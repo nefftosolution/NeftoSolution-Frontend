@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const JoinOurTeam = () => {
   return (
-    <section className="bg-[#f9f9f9] w-full py-20 px-6 md:px-12 lg:px-24 font-sans">
+    <section className="bg-light-150 w-full py-20 px-6 md:px-12 lg:px-24 font-sans">
       <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
         
         {/* Left Side: Text Content */}
@@ -18,7 +18,7 @@ const JoinOurTeam = () => {
           </div>
 
           {/* Heading */}
-          <h2 className="text-5xl md:text-6xl font-bold text-[#111827] mb-6 tracking-tight">
+          <h2 className="text-5xl md:text-6xl font-bold text-dark-300 mb-6 tracking-tight">
             Join Our Team
           </h2>
 
@@ -31,7 +31,7 @@ const JoinOurTeam = () => {
           {/* Link with Arrow */}
           <Link
             to="/contact" 
-            className="group flex items-center gap-2 text-[#b06f03] text-lg font-semibold hover:text-[#b06f03] transition-colors"
+            className="group flex items-center gap-2 text-accent-dark text-lg font-semibold hover:text-accent-dark transition-colors"
           >
             See Openings
             {/* Arrow Icon */}
@@ -49,15 +49,15 @@ const JoinOurTeam = () => {
         </div>
 
         {/* Right Side: Black Card */}
-        <div className="bg-[#0d1017] rounded-4xl w-full min-h-87.5 md:min-h-100 flex flex-col justify-center items-center text-center p-8 md:p-12 shadow-2xl">
+        <div className="bg-dark-500 rounded-4xl w-full min-h-87.5 md:min-h-100 flex flex-col justify-center items-center text-center p-8 md:p-12 shadow-2xl">
           {/* Small Top Text */}
           <h3 className="text-white text-2xl md:text-3xl font-medium mb-1">
-            Join Neffto<span className="text-[#b06f03]">.</span>
+            Join Neffto<span className="text-accent-dark">.</span>
           </h3>
           
           {/* Big Bold Text */}
           <h2 className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight">
-            <span className="text-[#b06f03]">GROW</span> <span className="text-white">WITH US</span>
+            <span className="text-accent-dark">GROW</span> <span className="text-white">WITH US</span>
           </h2>
         </div>
 

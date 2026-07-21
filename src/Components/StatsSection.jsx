@@ -42,12 +42,12 @@ const StatsSection = () => {
   ];
 
   return (
-    <section className="bg-[#f9f9f9] w-full py-20 px-6 md:px-12 lg:px-24 font-sans">
+    <section className="bg-light-150 w-full py-20 px-6 md:px-12 lg:px-24 font-sans">
       <div className="max-w-7xl mx-auto">
         
         {/* Top Label */}
         <div className="flex items-center gap-2 mb-16">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#CB8104]"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-accent"></span>
           <span className="text-gray-500 text-[12px] font-bold tracking-[0.15em] uppercase">
             Our Numbers
           </span>
@@ -57,7 +57,7 @@ const StatsSection = () => {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-y-12 gap-x-8 text-center">
           {stats.map((stat, index) => (
             <div key={index} className="flex flex-col gap-2">
-              <div className="text-[#111827]">
+              <div className="text-dark-300">
                 {stat.content}
               </div>
               

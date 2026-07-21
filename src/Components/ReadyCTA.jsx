@@ -3,7 +3,7 @@ import Starfield from '../Components/Starfield';
 
 const ReadyCTA = () => {
   return (
-    <section className="w-full bg-[#010101] py-20 md:py-28 px-4 flex flex-col items-center justify-center text-center font-sans relative overflow-hidden">
+    <section className="w-full bg-dark-700 py-20 md:py-28 px-4 flex flex-col items-center justify-center text-center font-sans relative overflow-hidden">
        
       {/* Background Animation Layer */}
       <div className="absolute inset-0 w-full h-full z-0 opacity-80">

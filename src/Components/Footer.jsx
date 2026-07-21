@@ -50,7 +50,7 @@ const Footer = () => {
   };
 
   return (
-    <footer className="bg-[#0a0f1a] text-gray-400 py-7 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
+    <footer className="bg-dark-600 text-gray-400 py-7 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
       <motion.div 
         variants={containerVariants}
         initial="hidden"
@@ -89,7 +89,7 @@ const Footer = () => {
                   <motion.div whileHover={{ x: 5 }}>
                     <Link 
                       to={link.href} 
-                      className="text-lg hover:text-[#CB8104] transition-colors duration-300"
+                      className="text-lg hover:text-accent transition-colors duration-300"
                     >
                       {link.name}
                     </Link>
@@ -110,7 +110,7 @@ const Footer = () => {
                   <motion.div whileHover={{ x: 5 }}>
                     <Link 
                       to={link.href} 
-                      className="text-lg hover:text-[#CB8104] transition-colors duration-300"
+                      className="text-lg hover:text-accent transition-colors duration-300"
                     >
                       {link.name}
                     </Link>
@@ -131,10 +131,10 @@ const Footer = () => {
                   <motion.a 
                     whileHover={{ x: 5 }}
                     href={link.href} 
-                    className="text-lg hover:text-[#CB8104] transition-colors duration-300 flex items-center group"
+                    className="text-lg hover:text-accent transition-colors duration-300 flex items-center group"
                   >
                     {link.name}
-                    <span className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-[#CB8104]">
+                    <span className="ml-2 opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-accent">
                       →
                     </span>
                   </motion.a>

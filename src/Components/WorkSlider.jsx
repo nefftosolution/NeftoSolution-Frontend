@@ -240,7 +240,7 @@ const WorkSlider = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
         {/* Heading Section */}
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-8 md:mb-12 gap-6">
-          <h2 className="text-3xl md:text-5xl font-extrabold text-[#00419B]">
+          <h2 className="text-3xl md:text-5xl font-extrabold text-primary">
             Discover our work
           </h2>
 
@@ -249,10 +249,10 @@ const WorkSlider = () => {
             to="/services"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className="group relative border-2 border-[#00419B] text-[#00419B] px-6 md:px-8 py-2.5 md:py-3 rounded-full font-bold transition-all text-sm md:text-base overflow-hidden hover:text-white cursor-pointer"
+            className="group relative border-2 border-primary text-primary px-6 md:px-8 py-2.5 md:py-3 rounded-full font-bold transition-all text-sm md:text-base overflow-hidden hover:text-white cursor-pointer"
           >
             {/* Sliding Background */}
-            <span className="absolute inset-0 w-0 bg-[#00419B] transition-all duration-300 group-hover:w-full -z-10"></span>
+            <span className="absolute inset-0 w-0 bg-primary transition-all duration-300 group-hover:w-full -z-10"></span>
 
             {/* Text */}
             <span className="relative z-10">View all services</span>
@@ -276,7 +276,7 @@ const WorkSlider = () => {
                   <div className="grow">
                     {/* Brand Gradient Logo Badge */}
                     <div className="flex items-center gap-3 mb-8 md:mb-10">
-                      <span className="font-bold text-[#00419B] text-2xl tracking-wider uppercase font-sans">
+                      <span className="font-bold text-primary text-2xl tracking-wider uppercase font-sans">
                         {project.logoText}
                       </span>
                     </div>
@@ -289,7 +289,7 @@ const WorkSlider = () => {
                       {project.stats.map((stat, idx) => (
                         <div
                           key={idx}
-                          className="relative pt-4 border-t-2 border-[#CB8104]"
+                          className="relative pt-4 border-t-2 border-accent"
                         >
                           <div className="text-xl md:text-3xl font-bold text-gray-900 mb-1">
                             {stat.value}
@@ -305,19 +305,19 @@ const WorkSlider = () => {
                   <div className="flex flex-wrap justify-between items-center gap-4 mt-auto mb-24 md:mb-0">
                     <Link
                       to={project.link}
-                      className="flex items-center gap-2 border-b-2 border-black hover:text-[#CB8104] transition-all pb-1"
+                      className="flex items-center gap-2 border-b-2 border-black hover:text-accent transition-all pb-1"
                     >
                       <span className="text-sm md:text-lg font-bold">
                         Explore Service
                       </span>
-                      <span className="text-[#CB8104] text-xl">→</span>
+                      <span className="text-accent text-xl">→</span>
                     </Link>
 
                     <div className="flex gap-1.5">
                       {projects.map((_, i) => (
                         <div
                           key={i}
-                          className={`h-1.5 md:h-2 rounded-full transition-all duration-500 ${i === activeIndex ? "bg-[#00419B] w-6" : "bg-gray-200 w-1.5"}`}
+                          className={`h-1.5 md:h-2 rounded-full transition-all duration-500 ${i === activeIndex ? "bg-primary w-6" : "bg-gray-200 w-1.5"}`}
                         />
                       ))}
                     </div>
@@ -342,7 +342,7 @@ const WorkSlider = () => {
           <div className="absolute bottom-8 left-1/2 -translate-x-1/2 w-auto flex justify-center gap-6 md:top-1/2 md:-translate-y-1/2 md:bottom-auto md:left-0 md:translate-x-0 md:w-full md:justify-between md:px-0 pointer-events-none z-50">
             <button
               onClick={prev}
-              className="pointer-events-auto w-14 h-14 lg:w-16 lg:h-16 bg-[#00419B] text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-[#CB8104] hover:scale-110 transition-all md:-translate-x-1/8 active:scale-90 cursor-pointer"
+              className="pointer-events-auto w-14 h-14 lg:w-16 lg:h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-accent hover:scale-110 transition-all md:-translate-x-1/8 active:scale-90 cursor-pointer"
             >
               <svg
                 className="w-6 h-6 md:w-6 md:h-6"
@@ -361,7 +361,7 @@ const WorkSlider = () => {
 
             <button
               onClick={next}
-              className="pointer-events-auto w-14 h-14 lg:w-16 lg:h-16 bg-[#00419B] text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-[#CB8104] hover:scale-110 transition-all md:translate-x-1/8 active:scale-90 cursor-pointer"
+              className="pointer-events-auto w-14 h-14 lg:w-16 lg:h-16 bg-primary text-white rounded-full flex items-center justify-center shadow-2xl hover:bg-accent hover:scale-110 transition-all md:translate-x-1/8 active:scale-90 cursor-pointer"
             >
               <svg
                 className="w-6 h-6 md:w-6 md:h-6"

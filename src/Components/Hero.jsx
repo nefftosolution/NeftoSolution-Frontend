@@ -73,7 +73,7 @@ const Hero = () => {
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1.2, ease: "easeOut" }}
-        className="absolute top-0 right-0 w-1/3 h-full bg-[#00419B]/5 -skew-x-12 transform translate-x-20 hidden lg:block"
+        className="absolute top-0 right-0 w-1/3 h-full bg-primary/5 -skew-x-12 transform translate-x-20 hidden lg:block"
       ></motion.div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-4 pb-12 lg:pt-8 lg:pb-16 relative z-10">
@@ -86,10 +86,10 @@ const Hero = () => {
             animate="visible"
             className="order-2 lg:order-1 mt-6 lg:mt-0"
           >
-            <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#00419B] leading-tight">
-              Together, we <span className="relative inline-block">
-                Build what
-                <svg className="absolute -bottom-1 left-0 w-full h-3 text-[#CB8104]" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
+              Leading <span className="relative inline-block">
+                Software House
+                <svg className="absolute -bottom-1 left-0 w-full h-3 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <motion.path 
                     initial={{ pathLength: 0 }}
                     animate={{ pathLength: 1 }}
@@ -100,7 +100,7 @@ const Hero = () => {
                     fill="transparent" 
                   />
                 </svg>
-              </span> the Future Relies On
+              </span> in Bahawalpur
             </motion.h1>
             
             <motion.p variants={itemVariants} className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
@@ -113,18 +113,18 @@ const Hero = () => {
               {/* Button 1: Explore Our Work */}
               <Link 
                 to={'/services'}
-                className="group hover:scale-102 relative px-9 py-3.5 border-2 border-[#00419B] text-[#00419B] rounded-full font-bold text-lg overflow-hidden transition-all hover:border-[#00419B] hover:text-white cursor-pointer"
+                className="group hover:scale-102 relative px-9 py-3.5 border-2 border-primary text-primary rounded-full font-bold text-lg overflow-hidden transition-all hover:border-primary hover:text-white cursor-pointer"
               >
-                <span className="absolute inset-0 w-0 bg-[#00419B] transition-all duration-300 group-hover:w-full -z-10"></span>
+                <span className="absolute inset-0 w-0 bg-primary transition-all duration-300 group-hover:w-full -z-10"></span>
                 <span className="relative z-10">Explore Our Work</span>
               </Link>
 
               {/* Button 2: Learn More */}
               <Link 
                 to={'/contact'}
-                className="group hover:scale-102 relative px-9 py-3.5 border-2 border-gray-300 text-gray-700 rounded-full font-bold text-lg overflow-hidden transition-all hover:border-[#CB8104] hover:text-white cursor-pointer"
+                className="group hover:scale-102 relative px-9 py-3.5 border-2 border-gray-300 text-gray-700 rounded-full font-bold text-lg overflow-hidden transition-all hover:border-accent hover:text-white cursor-pointer"
               >
-                <span className="absolute inset-0 w-0 bg-[#CB8104] transition-all duration-300 group-hover:w-full -z-10"></span>
+                <span className="absolute inset-0 w-0 bg-accent transition-all duration-300 group-hover:w-full -z-10"></span>
                 <span className="relative z-10">Learn More</span>
               </Link>
 
@@ -162,7 +162,7 @@ const Hero = () => {
                   key={currentSlide}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  className="bg-[#CB8104]/90 backdrop-blur-sm px-8 py-3 rounded-2xl shadow-2xl"
+                  className="bg-accent/90 backdrop-blur-sm px-8 py-3 rounded-2xl shadow-2xl"
                 >
                   <span className="text-white text-xl md:text-2xl font-bold tracking-wider uppercase">
                     {slides[currentSlide].title}

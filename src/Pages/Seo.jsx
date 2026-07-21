@@ -14,9 +14,9 @@ const SEO = () => {
       <ClientTestimonial 
         quote={
           <>
-            "We selected NEFTTO IT Solution for our <span className="text-[#00419B] font-bold">Search Engine Optimization (SEO)</span> project 
+            "We selected NEFTTO IT Solution for our <span className="text-primary font-bold">Search Engine Optimization (SEO)</span> project 
             following a competitive tender, and have been delighted by the team’s technical 
-            expertise, delivering <span className="text-[#00419B] font-bold">unmatched organic visibility</span> in tight timelines and on budget."
+            expertise, delivering <span className="text-primary font-bold">unmatched organic visibility</span> in tight timelines and on budget."
           </>
         }
       />

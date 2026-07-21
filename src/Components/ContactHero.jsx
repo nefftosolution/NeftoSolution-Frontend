@@ -28,7 +28,7 @@ const ContactHero = ({ activeTab, setActiveTab, scrollToLocation }) => {
   };
 
   return (
-    <section className="w-full bg-[#F8FAFC] pt-16 pb-0 md:pt-24 px-6 md:px-12 lg:px-20 font-sans relative overflow-hidden">
+    <section className="w-full bg-light-200 pt-16 pb-0 md:pt-24 px-6 md:px-12 lg:px-20 font-sans relative overflow-hidden">
       
       {/* eanimation */}
         {/* eanimatiom */}
@@ -53,7 +53,7 @@ const ContactHero = ({ activeTab, setActiveTab, scrollToLocation }) => {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 0.05, scale: 1 }}
         transition={{ duration: 1.5 }}
-        className="absolute -top-24 -right-24 w-96 h-96 bg-[#00419B] rounded-full blur-3xl pointer-events-none"
+        className="absolute -top-24 -right-24 w-96 h-96 bg-primary rounded-full blur-3xl pointer-events-none"
       />
 
       <motion.div 
@@ -67,21 +67,21 @@ const ContactHero = ({ activeTab, setActiveTab, scrollToLocation }) => {
         <motion.div variants={itemVariants} className="flex items-center gap-2 mb-10">
           <Link 
             to="/" 
-            className="text-gray-900 font-semibold hover:text-[#CB8104] transition-colors border-b border-black/20 leading-none pb-0.5"
+            className="text-gray-900 font-semibold hover:text-accent transition-colors border-b border-black/20 leading-none pb-0.5"
           >
             Home
           </Link>
-          <span className="text-[#CB8104] font-bold text-xl mt-0.5">›</span>
+          <span className="text-accent font-bold text-xl mt-0.5">›</span>
         </motion.div>
 
         {/* Heading with SVG Animation */}
         <div className="mb-10">
           <motion.h1 
             variants={itemVariants} 
-            className="text-5xl md:text-7xl font-extrabold text-[#00419B] inline-block relative tracking-tight"
+            className="text-5xl md:text-7xl font-extrabold text-primary inline-block relative tracking-tight"
           >
             Contact us
-            <svg className="absolute -bottom-2 left-0 w-full h-4 text-[#CB8104]" viewBox="0 0 100 10" preserveAspectRatio="none">
+            <svg className="absolute -bottom-2 left-0 w-full h-4 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
               <motion.path 
                 initial={{ pathLength: 0 }} 
                 animate={{ pathLength: 1 }} 
@@ -110,13 +110,13 @@ const ContactHero = ({ activeTab, setActiveTab, scrollToLocation }) => {
             
             <button 
               onClick={() => setActiveTab('collaborate')} 
-              className={`text-xl md:text-2xl font-bold pb-6 relative transition-colors cursor-pointer ${activeTab === 'collaborate' ? "text-[#00419B]" : "text-gray-400 hover:text-gray-600"}`}
+              className={`text-xl md:text-2xl font-bold pb-6 relative transition-colors cursor-pointer ${activeTab === 'collaborate' ? "text-primary" : "text-gray-400 hover:text-gray-600"}`}
             >
               Let's collaborate
               {activeTab === 'collaborate' && (
                 <motion.div 
                   layoutId="underline" 
-                  className="absolute bottom-0 left-0 w-full h-1.5 bg-[#CB8104] rounded-t-full" 
+                  className="absolute bottom-0 left-0 w-full h-1.5 bg-accent rounded-t-full" 
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}
@@ -124,13 +124,13 @@ const ContactHero = ({ activeTab, setActiveTab, scrollToLocation }) => {
 
             <button 
               onClick={scrollToLocation} 
-              className={`text-xl md:text-2xl font-bold pb-6 relative transition-colors cursor-pointer ${activeTab === 'location' ? "text-[#00419B]" : "text-gray-400 hover:text-gray-600"}`}
+              className={`text-xl md:text-2xl font-bold pb-6 relative transition-colors cursor-pointer ${activeTab === 'location' ? "text-primary" : "text-gray-400 hover:text-gray-600"}`}
             >
               Our location
               {activeTab === 'location' && (
                 <motion.div 
                   layoutId="underline" 
-                  className="absolute bottom-0 left-0 w-full h-1.5 bg-[#CB8104] rounded-t-full" 
+                  className="absolute bottom-0 left-0 w-full h-1.5 bg-accent rounded-t-full" 
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}

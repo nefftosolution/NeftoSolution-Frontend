@@ -62,7 +62,7 @@ const FeatureCard = ({ card }) => {
         className="absolute inset-0 w-full h-full object-cover object-left"
       />
       <div
-        className={`absolute inset-0 transition-all duration-500 bg-linear-to-t from-[#00419B]/95 via-[#00419B]/30 to-transparent ${isHovered ? "backdrop-blur-xs" : "backdrop-blur-0"}`}
+        className={`absolute inset-0 transition-all duration-500 bg-linear-to-t from-primary/95 via-primary/30 to-transparent ${isHovered ? "backdrop-blur-xs" : "backdrop-blur-0"}`}
       />
 
       <div className="absolute inset-0 p-8 flex flex-col justify-end z-10 text-left">
@@ -90,7 +90,7 @@ const FeatureCard = ({ card }) => {
         <Link
           to={card.to}
           target="_blank"
-          className="flex items-center gap-2 mt-4 text-[#CB8104] font-bold"
+          className="flex items-center gap-2 mt-4 text-accent font-bold"
         >
           <span>Learn More</span>
           <span className="text-xl">→</span>
@@ -105,10 +105,10 @@ const Core = () => {
     <section className="py-24 bg-white px-4 sm:px-6 lg:px-8 overflow-hidden flex flex-col justify-center">
       <div className="max-w-7xl mx-auto w-full">
         <div className="mb-16">
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#00419B] inline-block relative">
+          <h2 className="text-4xl md:text-5xl font-extrabold text-primary inline-block relative">
             Core Capabilities
             <svg
-              className="absolute -bottom-3 left-0 w-full h-3 text-[#CB8104]"
+              className="absolute -bottom-3 left-0 w-full h-3 text-accent"
               viewBox="0 0 100 10"
               preserveAspectRatio="none"
             >
