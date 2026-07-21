@@ -56,7 +56,7 @@ const Explore = () => {
 
         {/* Main Heading with Gradient */}
         <h1
-          className="text-[50px] md:text-[80px] lg:text-[96px] leading-[1.1] font-bold mb-6 bg-linear-to-r from-accent to-primary bg-clip-text text-transparent"
+          className="text-[50px] md:text-[80px] lg:text-[96px] leading-[1.1] font-bold mb-6 bg-[linear-gradient(to_right,#CB8104,#fb7248,#c13f6a,#67306a,#00419b)] bg-clip-text text-transparent"
         >
           Explore Our <br /> Services
         </h1>
