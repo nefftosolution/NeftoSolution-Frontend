@@ -266,7 +266,7 @@ const ContactSection = ({ activeTab, locationRef }) => {
                     <motion.div variants={itemVariants} className="text-xs text-gray-400 space-y-3 border-t border-gray-100 pt-8 mt-10">
                       <h4 className="font-bold text-primary uppercase tracking-widest">Data Protection</h4>
                       <p className="leading-relaxed">
-                        I understand that Neffto can contact me to promote their goods and services. I also understand I can unsubscribe at any time by emailing <a href="mailto:nefftosolution@gmail.com" className="text-accent underline font-bold">nefftosolution@gmail.com</a>.
+                        I understand that Neffto can contact me to promote their goods and services. I also understand I can unsubscribe at any time by emailing <a href="mailto:info@nefftosolution.com" className="text-accent underline font-bold">info@nefftosolution.com</a>.
                       </p>
                     </motion.div>
 
@@ -354,8 +354,8 @@ const ContactSection = ({ activeTab, locationRef }) => {
 
                 <div className="group cursor-pointer">
                   <h3 className="font-bold text-accent uppercase text-xs tracking-widest mb-2">Email us</h3>
-                  <a href="mailto:nefftosolution@gmail.com" className="text-xl font-bold text-slate-700 border-b-2 border-accent/30 group-hover:border-accent transition-all">
-                    nefftosolution@gmail.com
+                  <a href="mailto:info@nefftosolution.com" className="text-xl font-bold text-slate-700 border-b-2 border-accent/30 group-hover:border-accent transition-all">
+                    info@nefftosolution.com
                   </a>
                 </div>
 
