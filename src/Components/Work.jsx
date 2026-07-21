@@ -292,10 +292,11 @@ const Work = () => {
             }
 
             @media (max-width: 768px) {
-              .content { left: 30px; width: 85%; margin-top: 50px; }
+              .content { left: 30px; width: 85%; margin-top: -10px; }
               .content .name { font-size: 35px; }
               .item:nth-child(3) { left: 40%; top: 20%; width: 140px; height: 200px; display: none; }
               .item:nth-child(4), .item:nth-child(5) { display: none; }
+              .view-btn{padding: 10px 25px; font-size: 12px;}
             }
           `}
         </style>

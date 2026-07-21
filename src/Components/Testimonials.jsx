@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Logo from '../assets/images/logo.png';
+import Logo from '../assets/images/title.png';
+import LogoDark from '../assets/images/title-darkmode.png';
 
 const Testimonials = () => {
   const [current, setCurrent] = useState(0);
@@ -107,7 +108,10 @@ const Testimonials = () => {
                     whileHover={{ scale: 1.05 }}
                     className="absolute inset-3 lg:inset-4 bg-white rounded-full flex items-center justify-center p-8 lg:p-12 shadow-lg"
                   >
-                    <img src={testimonials[current].logo} alt="Logo" className="max-w-full h-auto object-contain" />
+                    <picture>
+                      <source srcSet={LogoDark} media="(prefers-color-scheme: dark)" />
+                      <img src={testimonials[current].logo} alt="Logo" className="max-w-full h-auto object-contain" />
+                    </picture>
                   </motion.div>
                 </div>
               </div>

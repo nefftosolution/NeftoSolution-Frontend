@@ -37,13 +37,13 @@ const AboutHero = () => {
       </div>
 
       {/* --- Main Heading Section --- */}
-      <div className="relative text-center z-10 -mt-2.5">
+      <div className="relative text-center z-10 mt-5">
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold tracking-tighter leading-none md:leading-[0.9]">
-          <span className="bg-linear-to-r from-accent to-primary bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(to_right,#CB8104,#fb7248,#c13f6a,#67306a,#00419b)] bg-clip-text text-transparent">
             Creators of digital
           </span>
           <br className="hidden md:block" />
-          <span className="bg-linear-to-r from-accent to-primary bg-clip-text text-transparent block md:inline">
+          <span className="bg-[linear-gradient(to_right,#CB8104,#fb7248,#c13f6a,#67306a,#00419b)] bg-clip-text text-transparent block md:inline">
             products
           </span>
         </h1>

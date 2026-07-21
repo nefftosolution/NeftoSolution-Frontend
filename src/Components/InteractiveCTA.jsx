@@ -40,7 +40,7 @@ const InteractiveCTA = () => {
       <div className="relative z-10 flex flex-col items-center">
         {/* Top Label */}
         <div className="mb-6">
-          <p className="text-gray-500 text-xs font-bold tracking-[0.2em] uppercase">
+          <p className="text-gray-300 text-xs font-bold tracking-[0.2em] uppercase">
             Ready to build something?
           </p>
         </div>
@@ -49,13 +49,13 @@ const InteractiveCTA = () => {
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tight leading-[1.1]">
           Let's create <br className="hidden md:block" />
           something <br className="hidden md:block" />
-          <span className="bg-linear-to-r from-accent-dark to-primary bg-clip-text text-transparent">
+          <span className="bg-[linear-gradient(to_right,#CB8104,#fb7248,#c13f6a,#67306a,#00419b)] bg-clip-text text-transparent">
             extraordinary
           </span>
         </h1>
 
         {/* Subtext Paragraph */}
-        <p className="text-gray-400 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
+        <p className="text-gray-300 text-base md:text-lg max-w-xl mx-auto mb-10 leading-relaxed">
           Got a project in mind? We're always excited to collaborate with
           ambitious brands and people.
         </p>

@@ -1,13 +1,13 @@
 import React, { useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Hamza from "../assets/images/hamza.png";
-import Ameerhamza from "../assets/images/Ameerhamza.png";
 import Sabir from "../assets/images/sabir.jpeg";
 import Mubeen from "../assets/images/mubeen.jpg";
 import Meer from "../assets/images/meer.png";
 import Talha from "../assets/images/talha.png";
 import Abeeha from "../assets/images/Abeeha.jpeg";
 import Wahaj from "../assets/images/Wahaj.jpeg";
+import Rahul from "../assets/images/rahul-team.jpeg";
 
 const cardData = [
   {
@@ -20,11 +20,11 @@ const cardData = [
   },
   {
     id: 2,
-    category: "DIGITAL MARKETING",
-    title: "AMEER HAMZA",
+    category: "Python & Machine Learning",
+    title: "Ruhul Hussain",
     description:
-      "Driving business growth through social media marketing, paid advertising, and data-driven digital strategies.",
-    image: Ameerhamza,
+      "Building intelligent solutions with Python, Machine Learning, Data Analysis, and AI-driven automation to solve real-world business challenges.",
+    image: Rahul,
   },
   {
     id: 3,

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import Logo from "../assets/images/logo.png" 
-
+import Logo from "../assets/images/title.png";
+import LogoDark from "../assets/images/title-darkmode.png";
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const location = useLocation();
@@ -20,11 +20,14 @@ const Header = () => {
         {/* Logo Section */}
         <div className="flex items-center">
           <Link to="/" className="flex items-center">
-            <img 
-              className='h-12 md:h-15 w-auto object-contain' 
-              src={Logo}
-              alt="Logo" 
-            />
+            <picture>
+              <source srcSet={LogoDark} media="(prefers-color-scheme: dark)" />
+              <img 
+                className='h-12 md:h-15 w-auto object-contain' 
+                src={Logo}
+                alt="Logo" 
+              />
+            </picture>
           </Link>
         </div>
 

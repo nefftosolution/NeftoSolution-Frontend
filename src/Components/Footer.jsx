@@ -1,32 +1,37 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import Logo from "../assets/images/logo.png"
+import React from "react";
+import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+import LogoDark from "../assets/images/logo-darkmode.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   const navLinks = [
-    { name: 'Home', href: '/' },
-    { name: 'Services', href: '/services' },
-    { name: 'About', href: '/about' },
-    { name: 'Contact', href: '/contact' },
+    { name: "Home", href: "/" },
+    { name: "Services", href: "/services" },
+    { name: "About", href: "/about" },
+    { name: "Contact", href: "/contact" },
   ];
 
   const serviceLinks = [
-    { name: 'Web Development', href: '/services/web-development' },
-    { name: 'App Development', href: '/services/app-development' },
-    { name: 'AI & ML', href: '/services/ai-solutions' },
-    { name: 'Graphic Designing', href: '/services/graphic-design' },
-    { name: 'Digital Marketing', href: '/services/digital-marketing' },
-    { name: 'SEO', href: '/services/seo' },
+    { name: "Web Development", href: "/services/web-development" },
+    { name: "App Development", href: "/services/app-development" },
+    { name: "AI & ML", href: "/services/ai-solutions" },
+    { name: "Graphic Designing", href: "/services/graphic-design" },
+    { name: "Digital Marketing", href: "/services/digital-marketing" },
+    { name: "SEO", href: "/services/seo" },
   ];
 
   const socialLinks = [
-    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61591430441959' },
-    { name: 'LinkedIn', href: 'https://www.linkedin.com/in/abdul-ahad-a848b641b/' },
-    { name: 'Instagram', href: 'https://www.instagram.com/nefftosolution/' },
-    { name: 'Twitter', href: '#' },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/profile.php?id=61591430441959",
+    },
+    {
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/abdul-ahad-a848b641b/",
+    },
+    { name: "Instagram", href: "https://www.instagram.com/nefftosolution/" },
   ];
 
   // Animation Variants
@@ -39,42 +44,44 @@ const Footer = () => {
         staggerChildren: 0.1,
         delayChildren: 0.2,
         duration: 0.8,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   const itemVariants = {
     hidden: { opacity: 0, y: 15 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
   return (
     <footer className="bg-dark-600 text-gray-400 py-7 px-4 sm:px-6 lg:px-8 border-t border-white/5 overflow-hidden">
-      <motion.div 
+      <motion.div
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         className="max-w-7xl mx-auto"
       >
-        
         {/* TOP SECTION: LOGO & LINKS */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
-          
           {/* Column 1: Logo and Tagline */}
           <motion.div variants={itemVariants} className="lg:col-span-4">
-            <motion.div whileHover={{ scale: 1.02 }} className="inline-block mb-8">
+            <motion.div
+              whileHover={{ scale: 1.02 }}
+              className="inline-block"
+            >
               <Link to="/">
-                <img 
-                  src={Logo}
-                  alt="Logo" 
-                  className="h-12 md:h-14 w-auto object-contain brightness-110"
+                <img
+                  src={LogoDark}
+                  alt="Logo"
+                  className="h-20 w-auto object-contain brightness-110"
                 />
               </Link>
             </motion.div>
             <p className="text-lg md:text-xl leading-relaxed max-w-sm">
-              We build digital products people actually enjoy using. Based wherever good WiFi and coffee meet.
+              We build digital products people actually enjoy using. Based
+              wherever good WiFi and coffee meet.
             </p>
           </motion.div>
 
@@ -87,8 +94,8 @@ const Footer = () => {
               {navLinks.map((link) => (
                 <li key={link.name}>
                   <motion.div whileHover={{ x: 5 }}>
-                    <Link 
-                      to={link.href} 
+                    <Link
+                      to={link.href}
                       className="text-lg hover:text-accent transition-colors duration-300"
                     >
                       {link.name}
@@ -108,8 +115,8 @@ const Footer = () => {
               {serviceLinks.map((link) => (
                 <li key={link.name}>
                   <motion.div whileHover={{ x: 5 }}>
-                    <Link 
-                      to={link.href} 
+                    <Link
+                      to={link.href}
                       className="text-lg hover:text-accent transition-colors duration-300"
                     >
                       {link.name}
@@ -128,9 +135,9 @@ const Footer = () => {
             <ul className="space-y-4">
               {socialLinks.map((link) => (
                 <li key={link.name}>
-                  <motion.a 
+                  <motion.a
                     whileHover={{ x: 5 }}
-                    href={link.href} 
+                    href={link.href}
                     className="text-lg hover:text-accent transition-colors duration-300 flex items-center group"
                   >
                     {link.name}
@@ -142,15 +149,14 @@ const Footer = () => {
               ))}
             </ul>
           </motion.div>
-
         </div>
 
         {/* BOTTOM SECTION: COPYRIGHT */}
-        <motion.div 
+        <motion.div
           variants={itemVariants}
           className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-sm tracking-wide"
         >
-          <motion.p 
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -158,8 +164,8 @@ const Footer = () => {
           >
             © {currentYear} Neffto Solutions. All rights reserved.
           </motion.p>
-          
-          <motion.p 
+
+          <motion.p
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.7 }}
@@ -168,7 +174,6 @@ const Footer = () => {
             Crafted with obsessive attention to detail.
           </motion.p>
         </motion.div>
-
       </motion.div>
     </footer>
   );
