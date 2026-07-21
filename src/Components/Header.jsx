@@ -22,7 +22,7 @@ const Header = () => {
           <Link to="/" className="flex items-center">
             <picture>
               <source srcSet={LogoDark} media="(prefers-color-scheme: dark)" />
-              <img 
+              <img loading="lazy" 
                 className='h-12 md:h-15 w-auto object-contain' 
                 src={Logo}
                 alt="Logo" 

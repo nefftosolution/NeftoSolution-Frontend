@@ -46,7 +46,7 @@ const ContactCTA = () => {
                   transition={{ duration: 1, delay: 0.5 }}
                   className="absolute top-0 right-0 w-1/2 h-1/2 overflow-hidden border-l-2 border-b-2 border-white/10"
                 >
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1376&auto=format&fit=crop"
                     alt="Work Vision"
                     className="w-full h-full object-cover grayscale"

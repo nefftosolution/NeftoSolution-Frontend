@@ -110,7 +110,7 @@ const Testimonials = () => {
                   >
                     <picture>
                       <source srcSet={LogoDark} media="(prefers-color-scheme: dark)" />
-                      <img src={testimonials[current].logo} alt="Logo" className="max-w-full h-auto object-contain" />
+                      <img loading="lazy" src={testimonials[current].logo} alt="Logo" className="max-w-full h-auto object-contain" />
                     </picture>
                   </motion.div>
                 </div>

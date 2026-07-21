@@ -72,7 +72,7 @@ const Footer = () => {
               className="inline-block"
             >
               <Link to="/">
-                <img
+                <img loading="lazy"
                   src={LogoDark}
                   alt="Logo"
                   className="h-20 w-auto object-contain brightness-110"

@@ -87,8 +87,8 @@ const Hero = () => {
             className="order-2 lg:order-1 mt-6 lg:mt-0"
           >
             <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary leading-tight">
-              Leading <span className="relative inline-block">
-                Software House
+              Together, we <span className="relative inline-block">
+                Build what
                 <svg className="absolute -bottom-1 left-0 w-full h-3 text-accent" viewBox="0 0 100 10" preserveAspectRatio="none">
                   <motion.path 
                     initial={{ pathLength: 0 }}
@@ -100,7 +100,7 @@ const Hero = () => {
                     fill="transparent" 
                   />
                 </svg>
-              </span> in Bahawalpur
+              </span> the Future Relies On
             </motion.h1>
             
             <motion.p variants={itemVariants} className="mt-6 text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">

@@ -52,7 +52,7 @@ const CareersScrollSection = () => {
           className="relative h-full bg-black z-20 shadow-2xl"
           style={{ width: "100%" }}
         >
-          <img
+          <img loading="lazy"
             src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=2070&auto=format&fit=crop"
             alt="Team working"
             className="absolute inset-0 w-full h-full object-cover"

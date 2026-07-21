@@ -59,7 +59,7 @@ const AboutSections = () => {
                   whileHover={{ scale: 1.02 }}
                   className="absolute inset-4 rounded-full overflow-hidden border-8 border-white shadow-2xl transition ease-in-out duration-500"
                 >
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1470&auto=format&fit=crop"
                     alt="Our Office"
                     className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
@@ -190,7 +190,7 @@ const AboutSections = () => {
                   whileHover={{ rotate: 1.5 }}
                   className="absolute inset-0 rounded-full overflow-hidden border-8 border-white shadow-2xl z-10"
                 >
-                  <img
+                  <img loading="lazy"
                     src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1470&auto=format&fit=crop"
                     alt="Awards"
                     className="w-full h-full object-cover"

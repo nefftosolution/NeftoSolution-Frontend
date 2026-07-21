@@ -93,7 +93,7 @@ const Services = () => {
               className="block group relative h-87.5 overflow-hidden cursor-pointer border-[0.5px] border-white/20"
             >
               <motion.div variants={cardVariants} className="h-full w-full">
-                <img 
+                <img loading="lazy" 
                   src={service.image} 
                   alt={service.title}
                   className="absolute inset-0 h-full w-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 scale-110 group-hover:scale-100"

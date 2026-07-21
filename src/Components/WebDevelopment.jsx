@@ -130,7 +130,7 @@ const WebDevelopment = () => {
                     transition={{ duration: 0.8 }}
                     className="absolute inset-0"
                   >
-                    <img src={slides[currentSlide].url} alt={slides[currentSlide].title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                    <img loading="lazy" src={slides[currentSlide].url} alt={slides[currentSlide].title} className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110" />
                     <div className="absolute inset-0 bg-gradient-to-t from-primary/40 to-transparent"></div>
                   </motion.div>
                 </AnimatePresence>
@@ -159,7 +159,7 @@ const WebDevelopment = () => {
               className="relative"
             >
               <div className="relative w-full aspect-video md:aspect-square lg:aspect-[4/3] overflow-hidden rounded-tl-[6rem] rounded-br-[6rem] md:rounded-tl-[9rem] md:rounded-br-[9rem] shadow-2xl border-4 border-white">
-                <img 
+                <img loading="lazy" 
                   src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop" 
                   alt="Development Process" 
                   className="w-full h-full object-cover"

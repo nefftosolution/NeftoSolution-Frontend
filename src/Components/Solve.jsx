@@ -80,7 +80,7 @@ const Solve = () => {
         {/* Right Side: Image with Floating Badge */}
         <div className="w-full lg:w-1/2 relative">
           <div className="rounded-[30px] overflow-hidden shadow-xl bg-black border-4 border-white">
-            <img 
+            <img loading="lazy" 
               src={GrowYourBusiness}
               alt="Grow Your Business" 
               className="w-full h-auto object-contain min-h-87.5"

@@ -61,7 +61,7 @@ const TeamCard = ({
   return (
     <div className="bg-light-300 rounded-4xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300 w-full max-w-140 mx-auto">
       <div className="group relative overflow-hidden h-95 md:h-125">
-        <img
+        <img loading="lazy"
           src={imageSrc}
           alt={name}
           style={{ objectPosition: imagePosition }}

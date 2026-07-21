@@ -39,7 +39,7 @@ const Number = () => {
             }}
           >
             <span className="relative inline-block">
-              Bitzonic
+              NEFFTO
               {/* Golden Hand-Drawn Line SVG */}
               <svg
                 className="absolute w-full h-3.75 -bottom-2 left-0"
