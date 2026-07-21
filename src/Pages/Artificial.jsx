@@ -10,9 +10,9 @@ const Artificial = () => {
   return (
     <>
       <Helmet>
-        <title>Python Machine Learning Services in Bahawalpur | AI Solutions</title>
-        <meta name="description" content="Looking for Python Machine Learning services in Bahawalpur? We provide advanced AI solutions and data-driven models for local businesses." />
-        <meta name="keywords" content="Python machine learning services Bahawalpur, AI solutions Bahawalpur, data science company Bahawalpur" />
+        <title>Python Machine Learning Services  | AI Solutions</title>
+        <meta name="description" content="Looking for Python Machine Learning services ? We provide advanced AI solutions and data-driven models for businesses worldwide." />
+        <meta name="keywords" content="Python machine learning services , AI solutions , data science company " />
       </Helmet>
       <AIHero />
       <CapabilitiesAi />

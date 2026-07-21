@@ -10,9 +10,9 @@ const WebDevelopmentPage = () => {
   return (
     <>
       <Helmet>
-        <title>Web Development Company in Bahawalpur | Custom Websites</title>
-        <meta name="description" content="Looking for a web development company in Bahawalpur? We build custom, responsive, and scalable websites for local businesses." />
-        <meta name="keywords" content="web development company Bahawalpur, custom website design Bahawalpur, local web developer Bahawalpur" />
+        <title>Web Development Company  | Custom Websites</title>
+        <meta name="description" content="Looking for a web development company ? We build custom, responsive, and scalable websites for businesses worldwide." />
+        <meta name="keywords" content="web development company , custom website design , global web developer " />
       </Helmet>
       <WebDevComponent />
       <Capabilities />

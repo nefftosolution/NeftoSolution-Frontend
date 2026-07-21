@@ -51,7 +51,7 @@ const DesignIntro = () => {
           </div>
         </div>
 
-        {/* --- Right Side: Black Card (Bitzonic Logo) --- */}
+        {/* --- Right Side: Black Card (NEFFTO Logo) --- */}
         <div className="w-full h-87.5 md:h-112.5 bg-black rounded-[2.5rem] flex items-center justify-center shadow-2xl relative overflow-hidden">
           <img loading="lazy" src={NEFTO} alt="" className="w-full h-full object-cover" />
         </div>

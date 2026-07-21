@@ -10,9 +10,9 @@ const AppDevelopment = () => {
   return (
     <>
       <Helmet>
-        <title>Mobile App Development Company in Bahawalpur | Android & iOS Apps</title>
-        <meta name="description" content="Top mobile app development company in Bahawalpur. We design and build custom iOS and Android applications." />
-        <meta name="keywords" content="mobile app development company Bahawalpur, app development services Bahawalpur, local app developer Bahawalpur" />
+        <title>Mobile App Development Company  | Android & iOS Apps</title>
+        <meta name="description" content="Top mobile app development company . We design and build custom iOS and Android applications." />
+        <meta name="keywords" content="mobile app development company , app development services , global app developer " />
       </Helmet>
       <AppDevComponent />
       <CapabilitiesApp />

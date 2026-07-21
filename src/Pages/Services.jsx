@@ -12,9 +12,9 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <title>SaaS Development Services in Bahawalpur | Scalable Products</title>
-        <meta name="description" content="Offering SaaS development services and comprehensive IT solutions for local businesses in Bahawalpur." />
-        <meta name="keywords" content="SaaS development services Bahawalpur, software services Bahawalpur, local software agency Bahawalpur" />
+        <title>Services  | Scalable Products</title>
+        <meta name="description" content="Offering SaaS development services and comprehensive IT solutions for businesses worldwide ." />
+        <meta name="keywords" content="SaaS development services , software services , global software agency " />
       </Helmet>
       <Explore />
       <Core />

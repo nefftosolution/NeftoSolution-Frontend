@@ -42,7 +42,7 @@ function App() {
       <div className="min-h-screen bg-white flex flex-col">
         <Header />
        
-        <main className="flex-grow">
+        <main className="grow">
           <Suspense fallback={<Loader />}>
             <Routes>
               {/* Main Navigation Routes */}

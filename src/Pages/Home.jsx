@@ -12,9 +12,9 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <title>Software House in Bahawalpur | Web, App & SaaS Development</title>
-        <meta name="description" content="Leading software house in Bahawalpur offering web development, app development, SaaS, digital marketing, and Python ML services." />
-        <meta name="keywords" content="software house Bahawalpur, web development company Bahawalpur, app development Bahawalpur, SaaS development Bahawalpur, digital marketing Bahawalpur" />
+        <title>NEFFTO IT Solution | Web, App, SaaS Development, Python ML & Digital Marketing</title>
+        <meta name="description" content="Leading software house offering web development, app development, SaaS, digital marketing, and Python ML services." />
+        <meta name="keywords" content="software house , web development company , app development , SaaS development , digital marketing " />
       </Helmet>
       <Hero />
       <Services />

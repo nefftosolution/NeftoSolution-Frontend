@@ -19,9 +19,9 @@ const allProjects = {
       title:
         "Creating Fast, Responsive, and Scalable Websites for Modern Businesses",
       stats: [
-        { value: "60%", label: "higher user engagement" },
-        { value: "2.1s", label: "average page load time" },
-        { value: "100k+", label: "monthly user interactions" },
+        { value: "5+", label: "websites launched" },
+        { value: "10+", label: "clients served" },
+        { value: "24/7", label: "support available" },
       ],
       image: webImg,
       link: "/services/web-development",
@@ -32,9 +32,9 @@ const allProjects = {
       title:
         "Developing Professional Web Experiences That Convert Visitors into Customers",
       stats: [
-        { value: "10+", label: "projects completed" },
-        { value: "95%", label: "client satisfaction" },
-        { value: "24/7", label: "technical support" },
+        { value: "Custom", label: "web solutions" },
+        { value: "SEO", label: "friendly websites" },
+        { value: "Fast", label: "performance" },
       ],
       image: webImg,
       link: "/services/web-development",
@@ -48,9 +48,9 @@ const allProjects = {
       title:
         "Building High-Performance Android and iOS Applications with Seamless UX",
       stats: [
-        { value: "1M+", label: "potential user reach" },
-        { value: "4.8★", label: "user experience rating" },
-        { value: "85%", label: "customer retention improvement" },
+        { value: "3+", label: "apps developed" },
+        { value: "Android", label: "app support" },
+        { value: "iOS", label: "compatibility" },
       ],
       image: appImg,
       link: "/services/app-development",
@@ -61,9 +61,9 @@ const allProjects = {
       title:
         "Delivering Scalable Mobile Applications with Real-Time Functionality",
       stats: [
-        { value: "30%", label: "faster operations" },
-        { value: "10k+", label: "active user capacity" },
-        { value: "99.9%", label: "system reliability" },
+        { value: "Cross", label: "platform apps" },
+        { value: "Secure", label: "architecture" },
+        { value: "24/7", label: "maintenance" },
       ],
       image: appImg,
       link: "/services/app-development",
@@ -77,9 +77,9 @@ const allProjects = {
       title:
         "Implementing Intelligent AI Solutions to Streamline Business Operations",
       stats: [
-        { value: "80%", label: "process automation" },
-        { value: "24/7", label: "smart assistance" },
-        { value: "5x", label: "productivity boost" },
+        { value: "AI", label: "powered solutions" },
+        { value: "Smart", label: "automation" },
+        { value: "24/7", label: "availability" },
       ],
       image: aiImg,
       link: "/services/ai-solutions",
@@ -89,9 +89,9 @@ const allProjects = {
       logoText: "Predictive Analytics",
       title: "Leveraging Machine Learning for Data-Driven Decision Making",
       stats: [
-        { value: "94%", label: "prediction accuracy" },
-        { value: "30%", label: "cost optimization" },
-        { value: "12M+", label: "data points analyzed" },
+        { value: "ML", label: "technology" },
+        { value: "Data", label: "driven insights" },
+        { value: "Smart", label: "decisions" },
       ],
       image: aiImg,
       link: "/services/ai-solutions",
@@ -105,9 +105,9 @@ const allProjects = {
       title:
         "Crafting Memorable Visual Identities That Strengthen Brand Recognition",
       stats: [
+        { value: "20+", label: "design assets" },
+        { value: "5+", label: "brands served" },
         { value: "100%", label: "custom designs" },
-        { value: "15+", label: "branding assets" },
-        { value: "3x", label: "brand visibility growth" },
       ],
       image: graphicImg,
       link: "/services/graphic-design",
@@ -118,9 +118,9 @@ const allProjects = {
       title:
         "Designing Marketing Materials That Capture Attention and Drive Engagement",
       stats: [
-        { value: "50+", label: "creative assets delivered" },
-        { value: "10M+", label: "audience impressions" },
-        { value: "45%", label: "engagement increase" },
+        { value: "Logo", label: "design services" },
+        { value: "Social", label: "media creatives" },
+        { value: "Modern", label: "visual identity" },
       ],
       image: graphicImg,
       link: "/services/graphic-design",
@@ -134,9 +134,9 @@ const allProjects = {
       title:
         "Driving Business Success Through Strategic Digital Marketing Campaigns",
       stats: [
-        { value: "350%", label: "lead generation growth" },
-        { value: "-40%", label: "lower acquisition cost" },
-        { value: "4.2x", label: "average ROAS" },
+        { value: "5+", label: "campaigns managed" },
+        { value: "10+", label: "business leads" },
+        { value: "24/7", label: "campaign support" },
       ],
       image: marketingImg,
       link: "/services/digital-marketing",
@@ -147,9 +147,9 @@ const allProjects = {
       title:
         "Maximizing Brand Reach with Social Media and Email Marketing Strategies",
       stats: [
-        { value: "1.2M+", label: "audience reached" },
-        { value: "50%", label: "customer retention increase" },
-        { value: "2.5M+", label: "social impressions" },
+        { value: "Social", label: "media marketing" },
+        { value: "Email", label: "campaigns" },
+        { value: "Targeted", label: "audiences" },
       ],
       image: marketingImg,
       link: "/services/digital-marketing",
@@ -163,9 +163,9 @@ const allProjects = {
       title:
         "Improving Search Visibility and Ranking for Long-Term Organic Success",
       stats: [
-        { value: "300%", label: "organic traffic growth" },
-        { value: "Top 3", label: "keyword rankings" },
-        { value: "8.5%", label: "search conversion rate" },
+        { value: "5+", label: "sites optimized" },
+        { value: "Local", label: "SEO expertise" },
+        { value: "Organic", label: "growth" },
       ],
       image: seoImg,
       link: "/services/seo",
@@ -176,9 +176,9 @@ const allProjects = {
       title:
         "Optimizing Local Search Presence to Attract Nearby Customers and Leads",
       stats: [
-        { value: "5x", label: "local inquiries increase" },
-        { value: "150k+", label: "map impressions" },
-        { value: "#1", label: "local search position" },
+        { value: "Google", label: "business profile" },
+        { value: "Maps", label: "optimization" },
+        { value: "Local", label: "visibility" },
       ],
       image: seoImg,
       link: "/services/seo",

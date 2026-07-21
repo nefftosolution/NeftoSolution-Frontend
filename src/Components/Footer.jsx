@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import LogoDark from "../assets/images/logo-darkmode.png";
+import Logo from "../assets/images/logo-darkmode.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -67,14 +67,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-16">
           {/* Column 1: Logo and Tagline */}
           <motion.div variants={itemVariants} className="lg:col-span-4">
-            <motion.div
-              whileHover={{ scale: 1.02 }}
-              className="inline-block"
-            >
+            <motion.div whileHover={{ scale: 1.02 }} className="inline-block">
               <Link to="/">
-                <img loading="lazy"
-                  src={LogoDark}
-                  alt="Logo"
+                <img loading="lazy" 
+                  src={Logo}
+                  alt="Logo" 
                   className="h-20 w-auto object-contain brightness-110"
                 />
               </Link>

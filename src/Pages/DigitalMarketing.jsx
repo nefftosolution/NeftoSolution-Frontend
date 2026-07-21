@@ -10,9 +10,9 @@ const DigitalMarketing = () => {
   return (
     <>
       <Helmet>
-        <title>Digital Marketing Agency in Bahawalpur | SEO, Ads & Social Media</title>
-        <meta name="description" content="Top digital marketing agency in Bahawalpur helping local businesses grow through SEO, Google Ads, and social media marketing." />
-        <meta name="keywords" content="digital marketing agency Bahawalpur, SEO services Bahawalpur, social media marketing Bahawalpur" />
+        <title>Digital Marketing Agency  | SEO, Ads & Social Media</title>
+        <meta name="description" content="Top digital marketing agency  helping businesses worldwide grow through SEO, Google Ads, and social media marketing." />
+        <meta name="keywords" content="digital marketing agency , SEO services , social media marketing " />
       </Helmet>
       <MarketingHero />
       <CapabilitiesMarketing />
