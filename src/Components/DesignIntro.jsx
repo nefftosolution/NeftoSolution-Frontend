@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import NEFTO from '../assets/images/NEFTO.png'
+import NEFTO from '../assets/images/NEFTO.jpeg'
 
 const DesignIntro = () => {
   return (
