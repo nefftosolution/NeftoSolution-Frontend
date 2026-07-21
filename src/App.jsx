@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './Components/Header';
-import Home from './Pages/Home';
-import Services from './Pages/Services';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
 import Footer from './Components/Footer';
-
-// Service Pages Imports
-import WebDevelopment from './Pages/WebDevelopment';
-import AppDevelopment from './Pages/AppDevelopment';
-import Artificial from './Pages/Artificial';
-import GraphicDesignPage from './Pages/Graphic';
-import DigitalMarketing from './Pages/DigitalMarketing';
-import SEO from './Pages/Seo';
 import InteractiveCTA from './Components/InteractiveCTA';
+
+// Lazy Load Pages
+const Home = lazy(() => import('./Pages/Home'));
+const Services = lazy(() => import('./Pages/Services'));
+const About = lazy(() => import('./Pages/About'));
+const Contact = lazy(() => import('./Pages/Contact'));
+const WebDevelopment = lazy(() => import('./Pages/WebDevelopment'));
+const AppDevelopment = lazy(() => import('./Pages/AppDevelopment'));
+const Artificial = lazy(() => import('./Pages/Artificial'));
+const GraphicDesignPage = lazy(() => import('./Pages/Graphic'));
+const DigitalMarketing = lazy(() => import('./Pages/DigitalMarketing'));
+const SEO = lazy(() => import('./Pages/Seo'));
 
 // Helper: Page change hone par scroll top par le janay ke liye
 const ScrollToTop = () => {
@@ -28,28 +28,40 @@ const ScrollToTop = () => {
   return null;
 };
 
+// Loading Fallback Component
+const Loader = () => (
+  <div className="flex items-center justify-center min-h-[70vh]">
+    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+  </div>
+);
+
 function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-white flex flex-col">
         <Header />
        
-        <Routes>
-          {/* Main Navigation Routes */}
-          <Route path="/" element={<Home />} />
-          <Route path="/services" element={<Services />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+        <main className="flex-grow">
+          <Suspense fallback={<Loader />}>
+            <Routes>
+              {/* Main Navigation Routes */}
+              <Route path="/" element={<Home />} />
+              <Route path="/services" element={<Services />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
 
-          {/* Individual Services Routes */}
-          <Route path="/services/web-development" element={<WebDevelopment />} />
-          <Route path="/services/app-development" element={<AppDevelopment />} />
-          <Route path="/services/ai-solutions" element={<Artificial />} />
-          <Route path="/services/graphic-design" element={<GraphicDesignPage />} />
-          <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
-          <Route path="/services/seo" element={<SEO />} />
-        </Routes>
+              {/* Individual Services Routes */}
+              <Route path="/services/web-development" element={<WebDevelopment />} />
+              <Route path="/services/app-development" element={<AppDevelopment />} />
+              <Route path="/services/ai-solutions" element={<Artificial />} />
+              <Route path="/services/graphic-design" element={<GraphicDesignPage />} />
+              <Route path="/services/digital-marketing" element={<DigitalMarketing />} />
+              <Route path="/services/seo" element={<SEO />} />
+            </Routes>
+          </Suspense>
+        </main>
+        
         <InteractiveCTA />
         <Footer />
       </div>

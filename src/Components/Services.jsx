@@ -2,8 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom'; // Routing ke liye Link import kiya
 import WebDev from '../assets/images/web.avif';
-import AppDev from '../assets/images/app.jpg';
-import AI from '../assets/images/AI.jpg';
+import AppDev from '../assets/images/app.webp';
+import AI from '../assets/images/AI.webp';
 import GraphicDesign from '../assets/images/graphic.jpg';
 import DigitalMarketing from '../assets/images/DigitalMarketing.jpg';
 import SEO from '../assets/images/seo.jpg';

@@ -5,7 +5,7 @@ import Sabir from "../assets/images/sabir.jpeg";
 import Mubeen from "../assets/images/mubeen.jpg";
 import Meer from "../assets/images/meer.png";
 import Talha from "../assets/images/talha.png";
-import Abeeha from "../assets/images/Abeeha.jpeg";
+import Abeeha from "../assets/images/Abeeha.webp";
 import Wahaj from "../assets/images/Wahaj.jpeg";
 import Rahul from "../assets/images/rahul-team.jpeg";
 

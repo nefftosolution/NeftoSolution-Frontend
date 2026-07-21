@@ -1,7 +1,7 @@
 import React from "react";
 import CEO from "../assets/images/CEO.png";
 import CTO from "../assets/images/cto.png";
-import CoFounder from "../assets/images/Ameerhamza.png";
+import CoFounder from "../assets/images/Ameerhamza.webp";
 
 const TeamSection = () => {
   return (
